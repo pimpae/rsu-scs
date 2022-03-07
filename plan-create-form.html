@@ -81,13 +81,13 @@
                             <li class="nav-item">
                                 <a href="index.html" class="nav-link "> 
                                     <i class="nav-icon far fa-list-ul"></i>
-                                    <p>โครงการวิชาการ</p>
+                                    <p>งานบริการวิชาการเพื่อสังคม</p>
                                 </a> 
                             </li> 
                             <li class="nav-item">
                                 <a href="plan-price.html" class="nav-link active">
                                     <i class="nav-icon far fa-list-ul"></i>
-                                    <p>โครงการวิชาการแบบมีรายได้</p>
+                                    <p>งานบริการวิชาการ(มีรายได้)</p>
                                 </a> 
                             </li> 
                             <li class="nav-item">
@@ -136,7 +136,7 @@
                     <div class="container-fluid">
                         <div class="row mb-2">
                             <div class="col-sm-6">
-                                <h1 class="m-0"><b>สร้างโครงการวิชาการ</b></h1>
+                                <h1 class="m-0"><b>สร้างงานบริการวิชาการ</b></h1>
                             </div>  
                         </div> 
                     </div> 
@@ -193,18 +193,18 @@
                                                 <div class="col-xl-6">
                                                     <div class="form-group">
                                                         <div class="custom-control custom-radio">
-                                                            <input class="custom-control-input" type="radio" id="customRadio1" name="customRadio">
+                                                            <input class="custom-control-input" type="radio" id="customRadio1" name="customRadio" value="radio1">
                                                             <label for="customRadio1" class="custom-control-label">ต้องใช้</label>
                                                         </div>
                                                         <div class="custom-control custom-radio">
-                                                            <input class="custom-control-input" type="radio" id="customRadio2" name="customRadio">
+                                                            <input class="custom-control-input" type="radio" id="customRadio2" name="customRadio" value="radio2">
                                                             <label for="customRadio2" class="custom-control-label">ไม่ต้องใช้</label>
                                                         </div>
                                                     </div> 
                                                 </div>
                                             </div>
 
-                                            <div class="form-group row">
+                                            <div class="form-group row amount" style="display: none">
                                                 <div class="col-xl-3">
                                                     <label for="">จำนวน</label> 
                                                 </div>  
@@ -219,32 +219,11 @@
                                                 <div class="col-xl-3">
                                                     <label for="">หน่วยงานเจ้าของโครงการ</label> 
                                                 </div>  
-                                                <div class="col-xl-6">  
-                                                    <select class="selectpicker" title="เลือกหน่วยงาน" data-show-subtext="true" data-live-search="true" name="sel2"  id="sel2">  
-                                                        <option>หน่วยงาน 1</option>
-                                                        <option>หน่วยงาน 2</option>
-                                                        <option>หน่วยงาน 3</option>
-                                                        <option>หน่วยงาน 4</option>
-                                                        <option>หน่วยงาน 5</option>
-                                                    </select>
+                                                <div class="col-xl-6">   
+                                                    <input type="text" class="form-control"   > 
                                                 </div>  
                                             </div> 
-
-
-                                            <div class="form-group row">
-                                                <div class="col-xl-3">
-                                                    <label for="">ประจำปี</label> 
-                                                </div>  
-                                                <div class="col-xl-6">  
-                                                    <select class="selectpicker" title="เลือกปี" data-show-subtext="true" data-live-search="true" name="sel2"  id="sel2">  
-                                                        <option>2567</option>
-                                                        <option>2566</option>
-                                                        <option>2564</option>
-                                                        <option>2563</option>
-                                                        <option>2562</option>
-                                                    </select>
-                                                </div>  
-                                            </div> 
+ 
                                             <!-- 
                                             <div class="form-group row">
                                                 <div class="col-xl-3">
@@ -357,6 +336,22 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js" integrity="sha512-T/tUfKSV1bihCnd+MxKD0Hm1uBBroVYBOYSk1knyvQ9VyZJpc/ALb4P0r6ubwVPSGB2GvjeoMAJJImBG12TiaQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/locales/bootstrap-datepicker.th.min.js" integrity="sha512-cp+S0Bkyv7xKBSbmjJR0K7va0cor7vHYhETzm2Jy//ZTQDUvugH/byC4eWuTii9o5HN9msulx2zqhEXWau20Dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+
+        <script> 
+
+                $("form input:radio").change(function () {
+                    if ($(this).val() == "radio1") { 
+                        $(".amount").show();
+                    } else {
+                        $(".amount").hide();
+                    }
+                });
+        </script>
+        
+
+
 
     </body>
 </html>
