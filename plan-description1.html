@@ -93,21 +93,14 @@
                             <li class="nav-item">
                                 <a href="#" class="nav-link">
                                     <i class="nav-icon far fa-list-ul"></i>
-                                    <p>###</p>
+                                    <p>หน่วยบริการวิชาการ</p>
                                 </a> 
-                            </li>   
+                            </li>    
                             <li class="nav-item">
-                                <a href="#" class="nav-link">
-                                    <i class="nav-icon far fa-list-ul"></i>
-                                    <p>###</p>
-                                </a> 
-                            </li>   
-                            <!-- 
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">
-                                    <i class="nav-icon far fa-file-excel"></i>
+                                <a href="#" class="nav-link"> 
+                                    <i class="nav-icon far fa-cog"></i>
                                     <p>
-                                        รายงาน  
+                                        การตั้งค่า  
                                         <i class="fas fa-angle-left right"></i>
                                     </p>
                                 </a>
@@ -115,18 +108,17 @@
                                     <li class="nav-item">
                                         <a href="#" class="nav-link">
                                             <i class="far fa-user-chart"></i>
-                                            <p>รายงาน</p>
+                                            <p>หมวดหมู่งานบริการวิชาการเพื่อสังคม</p>
                                         </a>
                                     </li>  
                                     <li class="nav-item">
                                         <a href="#" class="nav-link">
                                             <i class="far fa-user-chart"></i>
-                                            <p>รายงาน</p>
+                                            <p>เอกสารที่เกี่ยวข้องกับหนังสือมอบอำนาจ</p>
                                         </a>
                                     </li>  
                                 </ul>
-                            </li>  
-                             --> 
+                            </li>   
                         </ul>
                     </nav> 
                 </div> 
@@ -136,7 +128,12 @@
                     <div class="container-fluid">
                         <div class="row mb-2">
                             <div class="col-sm-6">
-                                <h1 class="m-0"><b>โครงการวิชาการ #1 : <span class="text-info">รอการพิจารณา	</span></b></h1>
+                                <h1 class="m-0"><b>โครงการวิชาการ #1 : <span class="text-info">รอการพิจารณา	</span></b>
+                                    
+                                    <a href="#" class="btn btn-primary btn-sm pt-2 takex" data-toggle="tooltip" data-placement="top" title="Take Note">
+                                        <i class="far fa-clipboard"></i> 
+                                    </a> 
+                                </h1>
                             </div>  
                         </div> 
                     </div> 
@@ -157,6 +154,16 @@
                                                     <label for="">#โครงการ 1</label> 
                                                 </div> 
                                             </div> 
+
+                                            <div class="form-group row">
+                                                <div class="col-xl-3">
+                                                    <label for="">หมวดหมู่ KPI</label> 
+                                                </div>  
+                                                <div class="col-xl-6">  
+                                                    <label for="">คณะบริหารธุรกิจ</label>  
+                                                </div>  
+                                            </div> 
+
 
                                             <div class="form-group row">
                                                 <div class="col-xl-3">
@@ -360,6 +367,42 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</label>
             </div>
         </div>
 
+        <div class="modal fade" id="myModal2x">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title"><strong> Take Note  </strong></h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div> 
+                    <div class="modal-body">
+                        <div class="col"> 
+                            <form action="">
+                                <div class="form-group row">
+                                    <div class="col-xl-12">
+                                        <label for="">หัวข้อ</label>
+                                        <input type="text" class="form-control" name="" id="">
+                                    </div> 
+                                </div>  
+                                <div class="form-group row">
+                                    <div class="col-xl-12">
+                                        <label for="">รายละเอียด</label>
+                                        <textarea class="form-control" name="" id="" cols="30" rows="4"></textarea>
+                                    </div> 
+                                </div>  
+                            </form>
+                        </div>
+                    </div> 
+                    <div class="modal-footer">
+                        <div class="col-12 text-center">
+                            <button type="button" class="btn btn-success">ยืนยัน</button>
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">ยกเลิก</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
 
 
         <!-- jQuery -->
@@ -379,6 +422,12 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</label>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js" integrity="sha512-T/tUfKSV1bihCnd+MxKD0Hm1uBBroVYBOYSk1knyvQ9VyZJpc/ALb4P0r6ubwVPSGB2GvjeoMAJJImBG12TiaQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/locales/bootstrap-datepicker.th.min.js" integrity="sha512-cp+S0Bkyv7xKBSbmjJR0K7va0cor7vHYhETzm2Jy//ZTQDUvugH/byC4eWuTii9o5HN9msulx2zqhEXWau20Dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        <script>
+            $('.takex').click(function(){
+                $("#myModal2x").modal()
+            });
+        </script>
 
     </body>
 </html>

@@ -93,21 +93,14 @@
                             <li class="nav-item">
                                 <a href="#" class="nav-link">
                                     <i class="nav-icon far fa-list-ul"></i>
-                                    <p>###</p>
+                                    <p>หน่วยบริการวิชาการ</p>
                                 </a> 
-                            </li>   
+                            </li>    
                             <li class="nav-item">
-                                <a href="#" class="nav-link">
-                                    <i class="nav-icon far fa-list-ul"></i>
-                                    <p>###</p>
-                                </a> 
-                            </li>   
-                            <!-- 
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">
-                                    <i class="nav-icon far fa-file-excel"></i>
+                                <a href="#" class="nav-link"> 
+                                    <i class="nav-icon far fa-cog"></i>
                                     <p>
-                                        รายงาน  
+                                        การตั้งค่า  
                                         <i class="fas fa-angle-left right"></i>
                                     </p>
                                 </a>
@@ -115,18 +108,17 @@
                                     <li class="nav-item">
                                         <a href="#" class="nav-link">
                                             <i class="far fa-user-chart"></i>
-                                            <p>รายงาน</p>
+                                            <p>หมวดหมู่งานบริการวิชาการเพื่อสังคม</p>
                                         </a>
                                     </li>  
                                     <li class="nav-item">
                                         <a href="#" class="nav-link">
                                             <i class="far fa-user-chart"></i>
-                                            <p>รายงาน</p>
+                                            <p>เอกสารที่เกี่ยวข้องกับหนังสือมอบอำนาจ</p>
                                         </a>
                                     </li>  
                                 </ul>
-                            </li>  
-                             --> 
+                            </li>   
                         </ul>
                     </nav> 
                 </div> 
@@ -174,10 +166,11 @@
                                                 <input type="text" class="form-control"  >
                                             </div>  
                                             <div class="col-xl-2">
-                                                <label for="">สถานะ</label>
-                                                <select class="selectpicker" title="สถานะ" data-show-subtext="true" data-live-search="true" name="sel2"  id="sel2">  
-                                                    <option>สถานะ</option>
-                                                    <option>สถานะ</option> 
+                                                <label for="">หมวดหมู่</label>
+                                                <select class="selectpicker" title="หมวดหมู่" data-show-subtext="true" data-live-search="true" name="sel2"  id="sel2">  
+                                                    <option>ด้านสุขภาพ</option>
+                                                    <option>ด้านเศรษฐกิจกิจสังคม</option> 
+                                                    <option>ด้านการศึกษา</option>  
                                                 </select>
                                             </div> 
                                             <div class="col-xl-2">
@@ -200,9 +193,10 @@
                                                 <tr>
                                                     <th>#</th> 
                                                     <th>ชื่อโครงการ</th> 
+                                                    <th>หมวดหมู่</th> 
                                                     <th>วันที่สร้าง</th>
                                                     <th>หน่วยงาน </th>
-                                                    <th>ประจำปี   </th> 
+                                                    <th>ผู้รับผิดชอบโครงการ</th> 
                                                     <th>สถานะ</th>
                                                     <th>&nbsp;</th>
                                                 </tr>
@@ -211,9 +205,16 @@
                                                 <tr> 
                                                     <td>1</td>
                                                     <td>โครงการวิชาการ #1</td>
+                                                    <td>ด้านสุขภาพ</td> 
                                                     <td>11/01/2564</td> 
                                                     <td>ศูนย์บริการวิชาการ</td>
-                                                    <td>2564</td> 
+                                                    <td>
+                                                        <ol>
+                                                            <li>อดิศร ศรีสุธรรม</li>
+                                                            <li>อดิศร ศรีสุธรรม</li>
+                                                            <li>อดิศร ศรีสุธรรม</li>
+                                                        </ol>
+                                                    </td> 
                                                     <td class="text-primary">รอการพิจารณา</td>   
                                                     <td>
                                                         <a href="plan-description1.html" class="btn btn-primary btn-sm pt-2"  data-toggle="tooltip" data-placement="top" title="รายละเอียด">
@@ -224,9 +225,15 @@
                                                 <tr> 
                                                     <td>2</td>
                                                     <td>โครงการวิชาการ #2</td>
+                                                    <td>ด้านเศรษฐกิจกิจสังคม</td> 
                                                     <td>11/01/2564</td> 
                                                     <td>ศูนย์บริการวิชาการ</td>
-                                                    <td>2564</td> 
+                                                    <td>
+                                                        <ol>
+                                                            <li>อดิศร ศรีสุธรรม</li>
+                                                            <li>อดิศร ศรีสุธรรม</li> 
+                                                        </ol>
+                                                    </td> 
                                                     <td class="text-danger">ไม่อนุมัติโครงการ</td>   
                                                     <td>
                                                         <a href="plan-description3.html" class="btn btn-primary btn-sm pt-2"  data-toggle="tooltip" data-placement="top" title="รายละเอียด">
@@ -237,9 +244,15 @@
                                                 <tr> 
                                                     <td>3</td>
                                                     <td>โครงการวิชาการ #3</td>
+                                                    <td>ด้านสุขภาพ</td> 
                                                     <td>11/01/2564</td> 
                                                     <td>ศูนย์บริการวิชาการ</td>
-                                                    <td>2564</td> 
+                                                    <td>
+                                                        <ol>
+                                                            <li>อดิศร ศรีสุธรรม</li>
+                                                            <li>อดิศร ศรีสุธรรม</li> 
+                                                        </ol>
+                                                    </td> 
                                                     <td class="text-primary">รอการพิจารณา</td>   
                                                     <td>
                                                         <a href="plan-description1.html" class="btn btn-primary btn-sm pt-2"  data-toggle="tooltip" data-placement="top" title="รายละเอียด">
@@ -250,12 +263,18 @@
                                                 <tr> 
                                                     <td>4</td>
                                                     <td>โครงการวิชาการ #4</td>
+                                                    <td>ด้านการศึกษา</td> 
                                                     <td>11/01/2564</td> 
                                                     <td>ศูนย์บริการวิชาการ</td>
-                                                    <td>2564</td> 
-                                                    <td class="text-primary">รอการพิจารณา</td>   
                                                     <td>
-                                                        <a href="plan-description1.html" class="btn btn-primary btn-sm pt-2"  data-toggle="tooltip" data-placement="top" title="รายละเอียด">
+                                                        <ol>
+                                                            <li>อดิศร ศรีสุธรรม</li>
+                                                            <li>อดิศร ศรีสุธรรม</li> 
+                                                        </ol>
+                                                    </td> 
+                                                    <td>จบโครงการ</td>   
+                                                    <td>
+                                                        <a href="plan-description4.html" class="btn btn-primary btn-sm pt-2"  data-toggle="tooltip" data-placement="top" title="รายละเอียด">
                                                             รายละเอียด
                                                         </a> 
                                                     </td>
@@ -263,9 +282,15 @@
                                                 <tr> 
                                                     <td>5</td>
                                                     <td>โครงการวิชาการ #5</td>
+                                                    <td>ด้านสุขภาพ</td> 
                                                     <td>11/01/2564</td> 
                                                     <td>ศูนย์บริการวิชาการ</td>
-                                                    <td>2564</td> 
+                                                    <td>
+                                                        <ol>
+                                                            <li>อดิศร ศรีสุธรรม</li>
+                                                            <li>อดิศร ศรีสุธรรม</li> 
+                                                        </ol>
+                                                    </td> 
                                                     <td class="text-success">เปิดโครงการ</td>   
                                                     <td>
                                                         <a href="plan-description2.html" class="btn btn-primary btn-sm pt-2"  data-toggle="tooltip" data-placement="top" title="รายละเอียด">
