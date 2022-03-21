@@ -79,13 +79,13 @@
                     <nav class="mt-2">
                         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false"> 
                             <li class="nav-item">
-                                <a href="index.html" class="nav-link"> 
+                                <a href="index.html" class="nav-link "> 
                                     <i class="nav-icon far fa-list-ul"></i>
                                     <p>งานบริการวิชาการเพื่อสังคม</p>
                                 </a> 
                             </li> 
                             <li class="nav-item">
-                                <a href="plan-price.html" class="nav-link active">
+                                <a href="plan-price.html" class="nav-link ">
                                     <i class="nav-icon far fa-list-ul"></i>
                                     <p>งานบริการวิชาการ(มีรายได้)</p>
                                 </a> 
@@ -96,7 +96,7 @@
                                     <p>หน่วยบริการวิชาการ</p>
                                 </a> 
                             </li>    
-                            <li class="nav-item">
+                            <li class="nav-item menu-is-opening menu-open">
                                 <a href="#" class="nav-link"> 
                                     <i class="nav-icon far fa-cog"></i>
                                     <p>
@@ -106,13 +106,13 @@
                                 </a>
                                 <ul class="nav nav-treeview">
                                     <li class="nav-item">
-                                        <a href="#" class="nav-link">
+                                        <a href="plan-type.html" class="nav-link ">
                                             <i class="far fa-user-chart"></i>
                                             <p>หมวดหมู่งานบริการวิชาการเพื่อสังคม</p>
                                         </a>
                                     </li>  
                                     <li class="nav-item">
-                                        <a href="#" class="nav-link">
+                                        <a href="plan-document.html" class="nav-link active">
                                             <i class="far fa-user-chart"></i>
                                             <p>เอกสารที่เกี่ยวข้องกับหนังสือมอบอำนาจ</p>
                                         </a>
@@ -128,7 +128,7 @@
                     <div class="container-fluid">
                         <div class="row mb-2">
                             <div class="col-sm-6">
-                                <h1 class="m-0"><b>โครงการวิชาการ #1</b></h1>
+                                <h1 class="m-0"><b>เอกสารที่เกี่ยวข้อง</b></h1>
                             </div>  
                         </div> 
                     </div> 
@@ -137,86 +137,116 @@
                     <div class="container-fluid">
                         <div class="div-box card-outline card-info p-4">
                   
-                            <div class="col">
-                                <div class="row justify-content-center"> 
-                                    <div class="col-xl-10 col-12">
-                                        <form action="">
-                   
+                            <div class="tab-content">
+                                <div role="tabpanel" class="tab-pane fade show active" id="tab1">
 
-                                            <div class="form-group row">
-                                                <div class="col-xl-3">
-                                                    <label for="">ชื่อโครงการ</label> 
-                                                </div>  
-                                                <div class="col-xl-6"> 
-                                                    <label for="">#โครงการ 1</label> 
-                                                </div> 
+                                    <div class="col-12 search-label">
+                                        <div class="row">
+                                            <div class="col-xl-2">
+                                                <label for="">ชื่อเอกสาร </label>
+                                                <input type="text" class="form-control"  >
                                             </div> 
-                                            <div class="form-group row">
-                                                <div class="col-xl-3">
-                                                    <label for="">ประเภทโครงการ</label> 
-                                                </div>  
-                                                <div class="col-xl-6">   
-                                                    <label for="">#โครงการก่อสร้าง</label> 
-                                                </div>  
-                                            </div> 
-                                            
-                                            <div class="form-group row">
-                                                <div class="col-xl-3">
-                                                    <label for="">ประมาณการรายได้</label> 
-                                                </div>  
-                                                <div class="col-xl-6"> 
-                                                    <label for="">9,000,000</label> 
-                                                </div> 
-                                            </div> 
-
-                                            <div class="form-group row">
-                                                <div class="col-xl-3">
-                                                    <label for="">ระยะเวลาที่ใช้</label> 
-                                                </div>  
-                                                <div class="col-xl-6"> 
-                                                    <label for="">120 วัน</label> 
-                                                </div> 
-                                            </div> 
-
-
-                                            <div class="form-group row">
-                                                <label class="col-xl-3">เงินค้ำประกัน</label>
-                                                <div class="col-xl-6">
-                                                    <label for="">100,000</label> 
-                                                </div>
-                                            </div> 
-                                    
-
-                                            <div class="form-group row">
-                                                <div class="col-xl-3">
-                                                    <label for="">หน่วยงานเจ้าของโครงการ</label> 
-                                                </div>  
-                                                <div class="col-xl-6">  
-                                                    <label for="">หน่วยงาน #1</label> 
-                                                </div>  
-                                            </div> 
-
-
-                            
-
-
-                                            <div class="col-12 p-0 mt-3"> 
-                                                <hr>
-                                            </div>
-                                            
-                                            <div class="form-group row">
-                                                <div class="col-xl-3 col-12"></div> 
-                                                <div class="col-xl-6 col-12"> 
-                                                    <a href="plan-price-description1-2.html" class="btn btn-info pl-4 pr-4"  >สร้างใบมอบอำนาจ</a>
-                                                    <!-- <button type="button" class="btn btn-secondary"  data-toggle="modal" data-target="#myModal2">ไม่อนุมัติโครงการ</button> -->
-                                                </div>
+                                            <div class="col-xl-2">
+                                                <label for="">วันที่สร้าง </label>
+                                                <input type="text" class="form-control"  >
                                             </div>  
-
-                                        </form>
-
+                                            <!-- <div class="col-xl-2">
+                                                <label for="">ประเภทโครงการ	</label>
+                                                <select class="selectpicker" title="สถานะ" data-show-subtext="true" data-live-search="true" name="sel2"  id="sel2">  
+                                                    <option>พัฒนาซอฟต์แวร์</option>
+                                                    <option>ก่อสร้าง</option> 
+                                                </select>
+                                            </div> 
+                                            <div class="col-xl-2">
+                                                <label for="">หน่วยงานเจ้าของโครงการ</label>
+                                                <input type="text" class="form-control"  >
+                                            </div>  -->
+                                            <div class="col-xl-2"> 
+                                                <label class="col-12">&nbsp; </label>
+                                                <button href="#" class="btn btn-primary btn-sm pt-2 ">  <i class="far fa-search"></i> ค้นหา
+                                                </button> 
+                                            </div> 
+                                            <div class="col-xl-2"> 
+                                                <label class="col-12">&nbsp; </label>
+                                                
+                                            <button type="button" class="btn btn-info  float-right btn-flat">
+                                                <i class="fas fa-plus"></i>   เพิ่มเอกสาร
+                                            </button>
+                                            </div> 
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
+
+                                    <br>
+
+                                    <div class="col-12 table-responsive">
+                                        <table id="tb-job" class="table table-class table-striped  " style="width:100%">
+                                            <thead>
+                                                <tr>
+                                                    <th>#</th> 
+                                                    <th>ชื่อเอกสาร</th>  
+                                                    <th>วันที่สร้าง</th>
+                                                    <th>เจ้าหน้าที่สร้าง </th>
+                                                    <th>การใช้งาน </th>  
+                                                    <th>&nbsp;</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr> 
+                                                    <td>1</td>
+                                                    <td>ใบมอบอำนาจ</td> 
+                                                    <td>11/01/2564</td> 
+                                                    <td>อดิศร ศรีสุธรรม</td>
+                                                    <td>
+                                                        <div class="custom-control custom-switch fl">
+                                                            <input type="checkbox" class="custom-control-input" id="customSwitch1" checked="">
+                                                            <label class="custom-control-label" for="customSwitch1"> </label>
+                                                        </div>
+                                                    </td>   
+                                                    <td>
+                                                        <a href="https://pcscenter.sbpolice.go.th/themes/easyidesign1/js/plugins/pdfjs/web/viewer.html?file=https://pcscenter.sbpolice.go.th/uploads/data/news/Documentlist2_20200305_142213.pdf" class="btn btn-primary btn-sm pt-2"  data-toggle="tooltip" data-placement="top" target="_blank" title="รายละเอียด">
+                                                            แสดงตัวอย่าง
+                                                        </a> 
+                                                    </td>
+                                                </tr>      
+                                                <tr> 
+                                                    <td>2</td>
+                                                    <td>ใบมอบอำนาจ</td> 
+                                                    <td>11/01/2564</td> 
+                                                    <td>อดิศร ศรีสุธรรม</td>
+                                                    <td>
+                                                        <div class="custom-control custom-switch fl">
+                                                            <input type="checkbox" class="custom-control-input" id="customSwitch1" checked="">
+                                                            <label class="custom-control-label" for="customSwitch1"> </label>
+                                                        </div>
+                                                    </td>   
+                                                    <td>
+                                                        <a href="https://pcscenter.sbpolice.go.th/themes/easyidesign1/js/plugins/pdfjs/web/viewer.html?file=https://pcscenter.sbpolice.go.th/uploads/data/news/Documentlist2_20200305_142213.pdf" class="btn btn-primary btn-sm pt-2"  data-toggle="tooltip" data-placement="top" target="_blank" title="รายละเอียด">
+                                                            แสดงตัวอย่าง
+                                                        </a> 
+                                                    </td>
+                                                </tr>    
+                                                <tr> 
+                                                    <td>3</td>
+                                                    <td>ใบมอบอำนาจ</td> 
+                                                    <td>11/01/2564</td> 
+                                                    <td>อดิศร ศรีสุธรรม</td>
+                                                    <td>
+                                                        <div class="custom-control custom-switch fl">
+                                                            <input type="checkbox" class="custom-control-input" id="customSwitch1" checked="">
+                                                            <label class="custom-control-label" for="customSwitch1"> </label>
+                                                        </div>
+                                                    </td>   
+                                                    <td>
+                                                        <a href="https://pcscenter.sbpolice.go.th/themes/easyidesign1/js/plugins/pdfjs/web/viewer.html?file=https://pcscenter.sbpolice.go.th/uploads/data/news/Documentlist2_20200305_142213.pdf" class="btn btn-primary btn-sm pt-2"  data-toggle="tooltip" data-placement="top" target="_blank" title="รายละเอียด">
+                                                            แสดงตัวอย่าง
+                                                        </a> 
+                                                    </td>
+                                                </tr>                                        
+                                            </tbody> 
+                                        </table>
+                                    </div>
+                                </div> 
+                            </div>  
  
                         </div>
                     </div> 
@@ -229,62 +259,6 @@
                 </div>
             </footer>  
         </div> 
-
-        <div class="modal fade" id="myModal">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                    <!-- Modal Header --> 
-                    <!-- Modal body -->
-                    <div class="modal-body">
-                        <div class="col text-center pt-5">
-                            <h1><i class="fas fa-check-circle text-success"></i></h1>
-                            <h2 class="text-success">อนุมัติโครงการ</h2>
-                            
-                        </div>
-                    </div>
-                    <!-- Modal footer -->
-                    <div class="modal-footer">
-                        <div class="col text-center">
-                            <a href="plan-price.html"  class="btn btn-success mr-3">ยืนยัน</a>
-                            <button  class="btn btn-outline-secondary" data-dismiss="modal">ยกเลิก</ิ>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="modal fade" id="myModal2">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                    <!-- Modal Header -->
-                    <div class="modal-header">
-                        <h4 class="modal-title text-danger"><b>ไม่อนุมัติโครงการ</b></h4>
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    </div>
-                    <!-- Modal body -->
-                    <div class="modal-body">
-                        <div class="col">
-                            <div class="row justify-content-center"> 
-                                <div class="col-12">
-                                    <h4>หมายเหตุ</h4>
-                                    <div class="form-group">
-                                        <input type="text" class="form-control">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Modal footer -->
-                    <div class="modal-footer">
-                        <div class="col">
-                            <a href="plan-price.html"  class="btn btn-primary mr-2">ยืนยัน</a>
-                            <button  class="btn btn-secondary" data-dismiss="modal">ยกเลิก</ิ>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
 
 
         <!-- jQuery -->
@@ -304,6 +278,22 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js" integrity="sha512-T/tUfKSV1bihCnd+MxKD0Hm1uBBroVYBOYSk1knyvQ9VyZJpc/ALb4P0r6ubwVPSGB2GvjeoMAJJImBG12TiaQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/locales/bootstrap-datepicker.th.min.js" integrity="sha512-cp+S0Bkyv7xKBSbmjJR0K7va0cor7vHYhETzm2Jy//ZTQDUvugH/byC4eWuTii9o5HN9msulx2zqhEXWau20Dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+
+        <script> 
+
+                $("form input:radio").change(function () {
+                    if ($(this).val() == "radio1") { 
+                        $(".amount").show();
+                    } else {
+                        $(".amount").hide();
+                    }
+                });
+        </script>
+        
+
+
 
     </body>
 </html>
