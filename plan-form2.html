@@ -86,7 +86,7 @@
                                 </a> 
                             </li> 
                             <li class="nav-item">
-                                <a href="plan-price.html" class="nav-link active">
+                                <a href="plan-price.html" class="nav-link ">
                                     <i class="nav-icon fas fa-list-alt"></i>
                                     <p>งานบริการวิชาการ(มีรายได้)</p>
                                 </a> 
@@ -104,7 +104,7 @@
                                 </a> 
                             </li> 
                             <li class="nav-item">
-                                <a href="plan-form2.html" class="nav-link"> 
+                                <a href="plan-form2.html" class="nav-link active"> 
                                     <i class="nav-icon far fa-file-alt"></i>
                                     <p> สร้างโครงการ แบบที่ 2</p>
                                 </a> 
@@ -154,8 +154,8 @@
                         <div class="row mb-2">
                             <div class="col-sm-6">
                                 <h1 class="m-0">
-                                    <b>งานบริการวิชาการ(มีรายได้)</b>
-                                    <a href="plan-create-form.html" class="btn btn-info ml-3 pt-2 btn-xs"><i class="fal fa-plus"></i> สร้างงานบริการวิชาการ</a>
+                                    <b>สร้างโครงการ แบบที่ 2</b>
+                                    <a href="form2.html" class="btn btn-info ml-3 pt-2 btn-xs"><i class="fal fa-plus"></i> สร้างโครงการ แบบที่ 2</a>
                                 </h1>
                             </div>  
                         </div> 
@@ -183,7 +183,7 @@
                                     <div class="col-12 search-label">
                                         <div class="row">
                                             <div class="col-xl-2">
-                                                <label for="">ชื่อโครงการ </label>
+                                                <label for="">หัวข้อ </label>
                                                 <input type="text" class="form-control"  >
                                             </div> 
                                             <div class="col-xl-2">
@@ -191,14 +191,14 @@
                                                 <input type="text" class="form-control"  >
                                             </div>  
                                             <div class="col-xl-2">
-                                                <label for="">ประเภทโครงการ	</label>
-                                                <select class="selectpicker" title="สถานะ" data-show-subtext="true" data-live-search="true" name="sel2"  id="sel2">  
-                                                    <option>พัฒนาซอฟต์แวร์</option>
-                                                    <option>ก่อสร้าง</option> 
+                                                <label for="">ประเภทหน่วยงานที่รับบริการ	</label>
+                                                <select class="selectpicker" title="ประเภทหน่วยงานที่รับบริการ" data-show-subtext="true" data-live-search="true" name="sel2"  id="sel2">  
+                                                    <option>ภายในมหาวิทยาลัย</option>
+                                                    <option>ภายนอกมหาวิทยาลัย</option> 
                                                 </select>
                                             </div> 
                                             <div class="col-xl-2">
-                                                <label for="">หน่วยงานเจ้าของโครงการ</label>
+                                                <label for="">ชื่อหน่วยงานที่รับบริการ </label>
                                                 <input type="text" class="form-control"  >
                                             </div> 
                                             <div class="col-xl-2"> 
@@ -216,14 +216,11 @@
                                             <thead>
                                                 <tr>
                                                     <th>#</th> 
-                                                    <th>ชื่อโครงการ</th> 
-                                                    <th>ประเภทโครงการ</th>
+                                                    <th>หัวข้อ</th> 
+                                                    <th>ชื่อ</th>
                                                     <th>วันที่สร้าง</th>
-                                                    <th>หน่วยงานเจ้าของโครงการ </th>
-                                                    <th>ระยะเวลาที่ใช้
-                                                    </th>
-                                                    <th>ประมาณการรายได้
-                                                    </th>  
+                                                    <th>ชื่อหน่วยงานที่รับบริการ </th>
+                                                    <th>ประเภทหน่วยงานที่รับบริการ </th> 
                                                     <th>สถานะ</th>
                                                     <th>&nbsp;</th>
                                                 </tr>
@@ -231,79 +228,74 @@
                                             <tbody>
                                                 <tr> 
                                                     <td>1</td>
-                                                    <td>โครงการวิชาการ #1</td>
-                                                    <td>พัฒนาซอฟต์แวร์ </td>
+                                                    <td>งานประชุมวิชาการ    </td>
+                                                    <td>โครงการ </td>
                                                     <td>11/01/2564</td> 
                                                     <td>ศูนย์บริการวิชาการ</td>
-                                                    <td>200 วัน</td>
-                                                    <td>8,500,000</td>   
+                                                    <td>ภายในมหาวิทยาลัย </td>  
                                                     <td class="text-primary">สร้างโครงการแล้ว</td>   
                                                     <td>
-                                                        <a href="plan-price-description1-2.html" class="btn btn-primary btn-sm pt-2"  data-toggle="tooltip" data-placement="top" title="รายละเอียด">
+                                                        <a href="#" class="btn btn-primary btn-sm pt-2"  data-toggle="tooltip" data-placement="top" title="รายละเอียด">
                                                             รายละเอียด
                                                         </a> 
                                                     </td>
-                                                </tr>     
-                                                <!-- <tr> 
-                                                    <td>2</td>
-                                                    <td>โครงการวิชาการ #2</td>
-                                                    <td>พัฒนาซอฟต์แวร์ </td>
-                                                    <td>11/01/2564</td> 
-                                                    <td>ศูนย์บริการวิชาการ</td>
-                                                    <td>200 วัน</td>
-                                                    <td>8,500,000</td>   
-                                                    <td class="text-danger">สร้างใบมอบอำนาจแล้ว</td>   
-                                                    <td>
-                                                        <a href="plan-price-description1-2.html" class="btn btn-primary btn-sm pt-2"  data-toggle="tooltip" data-placement="top" title="รายละเอียด">
-                                                            รายละเอียด
-                                                        </a> 
-                                                    </td>
-                                                </tr>    -->
+                                                </tr>      
                                                 <tr> 
                                                     <td>2</td>
-                                                    <td>โครงการวิชาการ #3</td>
-                                                    <td>พัฒนาซอฟต์แวร์ </td>
+                                                    <td>งานประชุมวิชาการ    </td>
+                                                    <td>โครงการ </td>
                                                     <td>11/01/2564</td> 
                                                     <td>ศูนย์บริการวิชาการ</td>
-                                                    <td>200 วัน</td>
-                                                    <td>8,500,000</td>   
+                                                    <td>ภายในมหาวิทยาลัย </td>  
                                                     <td class="text-primary">สร้างโครงการแล้ว</td>   
                                                     <td>
-                                                        <a href="plan-price-description1-2.html" class="btn btn-primary btn-sm pt-2"  data-toggle="tooltip" data-placement="top" title="รายละเอียด">
+                                                        <a href="#" class="btn btn-primary btn-sm pt-2"  data-toggle="tooltip" data-placement="top" title="รายละเอียด">
                                                             รายละเอียด
                                                         </a> 
                                                     </td>
-                                                </tr>   
+                                                </tr>
                                                 <tr> 
                                                     <td>3</td>
-                                                    <td>โครงการวิชาการ #4</td>
-                                                    <td>พัฒนาซอฟต์แวร์ </td>
+                                                    <td>งานประชุมวิชาการ    </td>
+                                                    <td>โครงการ </td>
                                                     <td>11/01/2564</td> 
                                                     <td>ศูนย์บริการวิชาการ</td>
-                                                    <td>200 วัน</td>
-                                                    <td>8,500,000</td>   
+                                                    <td>ภายในมหาวิทยาลัย </td>  
                                                     <td class="text-primary">สร้างโครงการแล้ว</td>   
                                                     <td>
-                                                        <a href="plan-price-description1-2.html" class="btn btn-primary btn-sm pt-2"  data-toggle="tooltip" data-placement="top" title="รายละเอียด">
+                                                        <a href="#" class="btn btn-primary btn-sm pt-2"  data-toggle="tooltip" data-placement="top" title="รายละเอียด">
                                                             รายละเอียด
                                                         </a> 
                                                     </td>
-                                                </tr>   
+                                                </tr>
                                                 <tr> 
                                                     <td>4</td>
-                                                    <td>โครงการวิชาการ #5</td>
-                                                    <td>พัฒนาซอฟต์แวร์ </td>
+                                                    <td>งานประชุมวิชาการ    </td>
+                                                    <td>โครงการ </td>
                                                     <td>11/01/2564</td> 
                                                     <td>ศูนย์บริการวิชาการ</td>
-                                                    <td>200 วัน</td>
-                                                    <td>8,500,000</td>   
-                                                    <td class="text-success">เริ่มต้นโครงการแล้ว</td>   
+                                                    <td>ภายในมหาวิทยาลัย </td>  
+                                                    <td class="text-primary">สร้างโครงการแล้ว</td>   
                                                     <td>
-                                                        <a href="plan-price-description2.html" class="btn btn-primary btn-sm pt-2"  data-toggle="tooltip" data-placement="top" title="รายละเอียด">
+                                                        <a href="#" class="btn btn-primary btn-sm pt-2"  data-toggle="tooltip" data-placement="top" title="รายละเอียด">
                                                             รายละเอียด
                                                         </a> 
                                                     </td>
-                                                </tr>                                          
+                                                </tr>
+                                                <tr> 
+                                                    <td>5</td>
+                                                    <td>งานประชุมวิชาการ    </td>
+                                                    <td>โครงการ </td>
+                                                    <td>11/01/2564</td> 
+                                                    <td>ศูนย์บริการวิชาการ</td>
+                                                    <td>ภายในมหาวิทยาลัย </td>  
+                                                    <td class="text-primary">สร้างโครงการแล้ว</td>   
+                                                    <td>
+                                                        <a href="#" class="btn btn-primary btn-sm pt-2"  data-toggle="tooltip" data-placement="top" title="รายละเอียด">
+                                                            รายละเอียด
+                                                        </a> 
+                                                    </td>
+                                                </tr>                                  
                                             </tbody> 
                                         </table>
                                     </div>
