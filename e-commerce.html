@@ -86,7 +86,7 @@
                                 </a> 
                             </li> 
                             <li class="nav-item">
-                                <a href="plan-price.html" class="nav-link active">
+                                <a href="plan-price.html" class="nav-link">
                                     <i class="nav-icon fas fa-list-alt"></i>
                                     <p>งานบริการวิชาการ(มีรายได้)</p>
                                 </a> 
@@ -110,7 +110,7 @@
                                 </a> 
                             </li>   
                             <li class="nav-item">
-                                <a href="e-commerce.html" class="nav-link"> 
+                                <a href="e-commerce.html" class="nav-link active"> 
                                     <i class="nav-icon far fa-store-alt"></i>
                                     <p>E-commerce  </p>
                                 </a> 
@@ -136,6 +136,12 @@
                                             <p>เอกสารที่เกี่ยวข้องกับหนังสือมอบอำนาจ</p>
                                         </a>
                                     </li>  
+                                    <li class="nav-item">
+                                        <a href="e-commerce-set.html" class="nav-link">
+                                            <i class="far fa-store-alt"></i>
+                                            <p>จัดการร้าน E-commerce</p>
+                                        </a>
+                                    </li>  
                                 </ul>
                             </li>   
                         </ul>
@@ -147,7 +153,10 @@
                     <div class="container-fluid">
                         <div class="row mb-2">
                             <div class="col-sm-6">
-                                <h1 class="m-0"><b>โครงการวิชาการ #1</b></h1>
+                                <h1 class="m-0">
+                                    <b>E-commerce</b>
+                                    <a href="#" class="btn btn-success ml-3 pt-2 btn-xs"><i class="fal fa-excel"></i> นำเข้าExcel</a>
+                                </h1>
                             </div>  
                         </div> 
                     </div> 
@@ -156,87 +165,140 @@
                     <div class="container-fluid">
                         <div class="div-box card-outline card-info p-4">
                   
-                            <div class="col">
-                                <div class="row justify-content-center"> 
-                                    <div class="col-xl-10 col-12">
-                                        <form action="">
-                   
+                            <!-- <ul class="nav nav-tabs" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="#tab1" role="tab" data-toggle="tab">รายการที่อนุมัติแล้ว</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#tab2" role="tab" data-toggle="tab">รายการรออนุมัติ <span class="right badge badge-danger">3</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#tab3" role="tab" data-toggle="tab">รายการที่ยกเลิก</a>
+                                </li>
+                            </ul>  -->
+            
+                            <div class="tab-content">
+                                <div role="tabpanel" class="tab-pane fade show active" id="tab1">
 
-                                            <div class="form-group row">
-                                                <div class="col-xl-3">
-                                                    <label for="">ชื่อโครงการ</label> 
-                                                </div>  
-                                                <div class="col-xl-6"> 
-                                                    <label for="">#โครงการ 1</label> 
-                                                </div> 
+                                    <div class="col-12 search-label">
+                                        <div class="row">
+                                            <div class="col-xl-2">
+                                                <label for="">ชื่อเอกสาร</label>
+                                                <input type="text" class="form-control"  >
                                             </div> 
-                                            <div class="form-group row">
-                                                <div class="col-xl-3">
-                                                    <label for="">ประเภทโครงการ</label> 
-                                                </div>  
-                                                <div class="col-xl-6">   
-                                                    <label for="">#โครงการก่อสร้าง</label> 
-                                                </div>  
-                                            </div> 
-                                            
-                                            <div class="form-group row">
-                                                <div class="col-xl-3">
-                                                    <label for="">ประมาณการรายได้</label> 
-                                                </div>  
-                                                <div class="col-xl-6"> 
-                                                    <label for="">9,000,000</label> 
-                                                </div> 
-                                            </div> 
-
-                                            <div class="form-group row">
-                                                <div class="col-xl-3">
-                                                    <label for="">ระยะเวลาที่ใช้</label> 
-                                                </div>  
-                                                <div class="col-xl-6"> 
-                                                    <label for="">120 วัน</label> 
-                                                </div> 
-                                            </div> 
-
-
-                                            <div class="form-group row">
-                                                <label class="col-xl-3">เงินค้ำประกัน</label>
-                                                <div class="col-xl-6">
-                                                    <label for="">100,000</label> 
-                                                </div>
-                                            </div> 
-                                    
-
-                                            <div class="form-group row">
-                                                <div class="col-xl-3">
-                                                    <label for="">หน่วยงานเจ้าของโครงการ</label> 
-                                                </div>  
-                                                <div class="col-xl-6">  
-                                                    <label for="">หน่วยงาน #1</label> 
-                                                </div>  
-                                            </div> 
-
-
-                            
-
-
-                                            <div class="col-12 p-0 mt-3"> 
-                                                <hr>
-                                            </div>
-                                            
-                                            <div class="form-group row">
-                                                <div class="col-xl-3 col-12"></div> 
-                                                <div class="col-xl-6 col-12"> 
-                                                    <a href="plan-price-description1-2.html" class="btn btn-info pl-4 pr-4"  >สร้างใบมอบอำนาจ</a>
-                                                    <!-- <button type="button" class="btn btn-secondary"  data-toggle="modal" data-target="#myModal2">ไม่อนุมัติโครงการ</button> -->
-                                                </div>
+                                            <div class="col-xl-2">
+                                                <label for="">วันที่สร้าง</label>
+                                                <input type="text" class="form-control"  >
                                             </div>  
-
-                                        </form>
-
+                                            <div class="col-xl-2">
+                                                <label for="">ประเภทร้านค้า	</label>
+                                                <select class="selectpicker" title="ประเภทร้านค้า" data-show-subtext="true" data-live-search="true" name="sel2"  id="sel2">  
+                                                    <option>Lazada</option>
+                                                    <option>Shopee</option> 
+                                                    <option>kaidee</option> 
+                                                    <option>weloveshopping</option> 
+                                                </select>
+                                            </div>  
+                                            <div class="col-xl-2"> 
+                                                <label class="col-12">&nbsp; </label>
+                                                <button href="#" class="btn btn-primary btn-sm pt-2 ">  <i class="far fa-search"></i> ค้นหา
+                                                </button> 
+                                            </div> 
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
- 
+
+                                    <br>
+
+                                    <div class="col-12 table-responsive">
+                                        <table id="tb-job" class="table table-class table-striped  " style="width:100%">
+                                            <thead>
+                                                <tr>
+                                                    <th>#</th> 
+                                                    <th>ชื่อเอกสาร</th> 
+                                                    <th>ประเภทร้านค้า</th>
+                                                    <th>วันที่นำเข้า</th>
+                                                    <th>เจ้าหน้าที่นำเข้า </th>
+                                                    <th>จำนวนสินค้า</th>
+                                                    <th>ยอดขาย</th>   
+                                                    <th>&nbsp;</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr> 
+                                                    <td>#1</td>
+                                                    <td>Lazada-19-02-65.xlxs</td>
+                                                    <td>Shopee</td>
+                                                    <td>11/01/2564</td> 
+                                                    <td>อดิศร ศรีสุธรรม</td>
+                                                    <td>200</td>
+                                                    <td>82,500</td>     
+                                                    <td>
+                                                        <a href="e-commerce-des1.html" class="btn btn-primary btn-sm pt-2"  data-toggle="tooltip" data-placement="top" title="รายละเอียด">
+                                                            รายละเอียด
+                                                        </a> 
+                                                    </td>
+                                                </tr>     
+                                                <tr> 
+                                                    <td>#1</td>
+                                                    <td>Lazada-19-02-65.xlxs</td>
+                                                    <td>Shopee</td>
+                                                    <td>11/01/2564</td> 
+                                                    <td>อดิศร ศรีสุธรรม</td>
+                                                    <td>200</td>
+                                                    <td>82,500</td>     
+                                                    <td>
+                                                        <a href="e-commerce-des1.html" class="btn btn-primary btn-sm pt-2"  data-toggle="tooltip" data-placement="top" title="รายละเอียด">
+                                                            รายละเอียด
+                                                        </a> 
+                                                    </td>
+                                                </tr>  
+                                                <tr> 
+                                                    <td>#1</td>
+                                                    <td>Lazada-19-02-65.xlxs</td>
+                                                    <td>Lazada</td>
+                                                    <td>11/01/2564</td> 
+                                                    <td>อดิศร ศรีสุธรรม</td>
+                                                    <td>200</td>
+                                                    <td>82,500</td>     
+                                                    <td>
+                                                        <a href="e-commerce-des1.html" class="btn btn-primary btn-sm pt-2"  data-toggle="tooltip" data-placement="top" title="รายละเอียด">
+                                                            รายละเอียด
+                                                        </a> 
+                                                    </td>
+                                                </tr>  
+                                                <tr> 
+                                                    <td>#1</td>
+                                                    <td>Lazada-19-02-65.xlxs</td>
+                                                    <td>Lazada</td>
+                                                    <td>11/01/2564</td> 
+                                                    <td>อดิศร ศรีสุธรรม</td>
+                                                    <td>200</td>
+                                                    <td>82,500</td>     
+                                                    <td>
+                                                        <a href="e-commerce-des1.html" class="btn btn-primary btn-sm pt-2"  data-toggle="tooltip" data-placement="top" title="รายละเอียด">
+                                                            รายละเอียด
+                                                        </a> 
+                                                    </td>
+                                                </tr>  
+                                                <tr> 
+                                                    <td>#1</td>
+                                                    <td>Lazada-19-02-65.xlxs</td>
+                                                    <td>Shopee</td>
+                                                    <td>11/01/2564</td> 
+                                                    <td>อดิศร ศรีสุธรรม</td>
+                                                    <td>200</td>
+                                                    <td>82,500</td>     
+                                                    <td>
+                                                        <a href="e-commerce-des1.html" class="btn btn-primary btn-sm pt-2"  data-toggle="tooltip" data-placement="top" title="รายละเอียด">
+                                                            รายละเอียด
+                                                        </a> 
+                                                    </td>
+                                                </tr>                                       
+                                            </tbody> 
+                                        </table>
+                                    </div>
+                                </div> 
+                            </div>       
                         </div>
                     </div> 
                 </section> 
@@ -248,62 +310,6 @@
                 </div>
             </footer>  
         </div> 
-
-        <div class="modal fade" id="myModal">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                    <!-- Modal Header --> 
-                    <!-- Modal body -->
-                    <div class="modal-body">
-                        <div class="col text-center pt-5">
-                            <h1><i class="fas fa-check-circle text-success"></i></h1>
-                            <h2 class="text-success">อนุมัติโครงการ</h2>
-                            
-                        </div>
-                    </div>
-                    <!-- Modal footer -->
-                    <div class="modal-footer">
-                        <div class="col text-center">
-                            <a href="plan-price.html"  class="btn btn-success mr-3">ยืนยัน</a>
-                            <button  class="btn btn-outline-secondary" data-dismiss="modal">ยกเลิก</ิ>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="modal fade" id="myModal2">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                    <!-- Modal Header -->
-                    <div class="modal-header">
-                        <h4 class="modal-title text-danger"><b>ไม่อนุมัติโครงการ</b></h4>
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    </div>
-                    <!-- Modal body -->
-                    <div class="modal-body">
-                        <div class="col">
-                            <div class="row justify-content-center"> 
-                                <div class="col-12">
-                                    <h4>หมายเหตุ</h4>
-                                    <div class="form-group">
-                                        <input type="text" class="form-control">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Modal footer -->
-                    <div class="modal-footer">
-                        <div class="col">
-                            <a href="plan-price.html"  class="btn btn-primary mr-2">ยืนยัน</a>
-                            <button  class="btn btn-secondary" data-dismiss="modal">ยกเลิก</ิ>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
 
 
         <!-- jQuery -->
