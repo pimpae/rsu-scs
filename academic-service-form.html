@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>ศูนย์บริการวิชาการ</title> 
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+        <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+        <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"> 
+        <link rel="icon" type="image/x-icon" href="images/rsu-logo.png">
+        <link rel="stylesheet" href="css/adminlte.min.css"> 
+        <link rel="stylesheet" href="css/main.css">   
+
+        <!-- TABLE -->
+        <link rel="stylesheet" href="https://cdn.datatables.net/1.10.25/css/dataTables.bootstrap4.min.css"> 
+        <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.2.9/css/responsive.bootstrap4.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.min.css">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css" integrity="sha512-mSYUmp1HYZDFaVKK//63EcZq4iFWFjxSL+Z3T/aCt4IO9Cejm03q3NKKYN6pFQzY0SBOr8h+eCIAZHPXcpZaNw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+    </head>
+    <body class="hold-transition sidebar-mini layout-fixed">
+        <div class="wrapper">
+            <!-- Preloader -->
+            <!-- <div class="preloader flex-column justify-content-center align-items-center">
+                <img class="animation__shake" src="images/AdminLTELogo.png" alt="AdminLTELogo" height="60" width="60">
+            </div> -->
+            <!-- Navbar -->
+            <nav class="main-header navbar navbar-expand navbar-white navbar-light"> 
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+                    </li> 
+                </ul> 
+                <ul class="navbar-nav ml-auto">   
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" data-toggle="dropdown" href="#">
+                            <i class="far fa-bell"></i>
+                            <span class="badge badge-warning navbar-badge">15</span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+                            <span class="dropdown-item dropdown-header">15 Notifications</span>
+                            <div class="dropdown-divider"></div>
+                            <a href="#" class="dropdown-item">
+                                <i class="fas fa-envelope mr-2"></i> 4 new messages
+                                <span class="float-right text-muted text-sm">3 mins</span>
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a href="#" class="dropdown-item">
+                                <i class="fas fa-users mr-2"></i> 8 friend requests
+                                <span class="float-right text-muted text-sm">12 hours</span>
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a href="#" class="dropdown-item">
+                                <i class="fas fa-file mr-2"></i> 3 new reports
+                                <span class="float-right text-muted text-sm">2 days</span>
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a href="#" class="dropdown-item dropdown-footer">See All Notifications</a>
+                        </div>
+                    </li> 
+                </ul>
+            </nav> 
+            <aside class="main-sidebar sidebar-dark-primary elevation-4">
+                <!-- Brand Logo -->
+                <a href="#" class="brand-link">
+                    <img src="images/sm-logo.png" alt="AdminLTE Logo" class="brand-image img-circle  "  >
+                    <p class="brand-text font-weight-light">ศูนย์บริการทางวิชาการ <br> มหาวิทยาลัยรังสิต</p>
+                </a> 
+                <div class="sidebar"> 
+                    <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+                        <div class="image">
+                            <img src="images/user8-128x128.jpg" class="img-circle" alt="User Image">
+                        </div>
+                        <div class="info">
+                            <a href="#" class="d-block">เจ้าหน้าที่</a>
+                        </div>
+                    </div>  
+                    <nav class="mt-2">
+                        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false"> 
+                            
+                            <li class="nav-item">
+                                <a href="index.html" class="nav-link"> 
+                                    <i class="nav-icon far fa-list-ul"></i>
+                                    <p>งานบริการวิชาการเพื่อสังคม</p>
+                                </a> 
+                            </li> 
+                            <li class="nav-item">
+                                <a href="plan-price.html" class="nav-link ">
+                                    <i class="nav-icon fas fa-list-alt"></i>
+                                    <p>งานบริการวิชาการ(มีรายได้)</p>
+                                </a> 
+                            </li> 
+                            <li class="nav-item">
+                                <a href="academic-service.html" class="nav-link active">
+                                    <i class="nav-icon far fa-list-ul"></i>
+                                    <p>หน่วยบริการวิชาการ</p>
+                                </a> 
+                            </li>    
+                            <li class="nav-item">
+                                <a href="plan-form1.html" class="nav-link"> 
+                                    <i class="nav-icon fas fa-file-alt"></i>
+                                    <p> สร้างโครงการ แบบที่ 1</p>
+                                </a> 
+                            </li> 
+                            <li class="nav-item">
+                                <a href="plan-form2.html" class="nav-link"> 
+                                    <i class="nav-icon far fa-file-alt"></i>
+                                    <p> สร้างโครงการ แบบที่ 2</p>
+                                </a> 
+                            </li>   
+                            <li class="nav-item">
+                                <a href="e-commerce.html" class="nav-link"> 
+                                    <i class="nav-icon far fa-store-alt"></i>
+                                    <p>E-commerce  </p>
+                                </a> 
+                            </li>    
+                            <li class="nav-item">
+                                <a href="#" class="nav-link"> 
+                                    <i class="nav-icon far fa-cog"></i>
+                                    <p>
+                                        การตั้งค่า  
+                                        <i class="fas fa-angle-left right"></i>
+                                    </p>
+                                </a>
+                                <ul class="nav nav-treeview">
+                                    <li class="nav-item">
+                                        <a href="plan-type.html" class="nav-link">
+                                            <i class="far fa-user-chart"></i>
+                                            <p>หมวดหมู่งานบริการวิชาการเพื่อสังคม</p>
+                                        </a>
+                                    </li>  
+                                    <li class="nav-item">
+                                        <a href="plan-document.html" class="nav-link">
+                                            <i class="far fa-user-chart"></i>
+                                            <p>เอกสารที่เกี่ยวข้องกับหนังสือมอบอำนาจ</p>
+                                        </a>
+                                    </li>  
+                                    <li class="nav-item">
+                                        <a href="e-commerce-set.html" class="nav-link">
+                                            <i class="far fa-store-alt"></i>
+                                            <p>จัดการร้าน E-commerce</p>
+                                        </a>
+                                    </li>  
+                                </ul>
+                            </li>   
+                        </ul>
+                    </nav> 
+                </div> 
+            </aside> 
+            <div class="content-wrapper"> 
+                <div class="content-header">
+                    <div class="container-fluid">
+                        <div class="row mb-2">
+                            <div class="col-sm-6">
+                                <h1 class="m-0"><b>สร้างรายการ รับจ่าย หน่วยบริการวิชาการ</b>  </h1>
+                            </div>  
+                        </div> 
+                    </div> 
+                </div>  
+                <section class="content">
+                    <div class="container-fluid">
+                        <div class="div-box card-outline card-info p-4">
+                  
+                            <div class="col">
+                                <div class="row justify-content-center"> 
+                                    <div class="col-xl-10 col-12">
+                                        <form action=""> 
+                                            <div class="form-group row">
+                                                <div class="col-xl-2">
+                                                    <label for="">ชื่อหน่วยบริการวิชาการ</label> 
+                                                </div>  
+                                                <div class="col-xl-4"> 
+                                                    <select class="selectpicker" title="ชื่อหน่วยบริการวิชาการ" data-show-subtext="true" data-live-search="true" name="sel2"  id="sel2">  
+                                                        <option>ศูนย์บริการทางวิชาการดนตรี</option>
+                                                        <option>ศูนย์บริการทางวิชาการแสดงและนาฏศิลป์</option> 
+                                                        <option>ศูนย์บริการทางวิชาการดนตรี</option>
+                                                        <option>ศูนย์บริการทางวิชาการแสดงและนาฏศิลป์</option> 
+                                                        <option>ศูนย์บริการทางวิชาการดนตรี</option>
+                                                        <option>ศูนย์บริการทางวิชาการแสดงและนาฏศิลป์</option> 
+                                                    </select>
+                                                </div> 
+                                            </div> 
+                                            <div class="form-group row">
+                                                <div class="col-xl-2">
+                                                    <label for="">เดือน</label> 
+                                                </div>  
+                                                <div class="col-xl-4"> 
+                                                    <select class="selectpicker" title="เดือน" data-show-subtext="true" data-live-search="true" name="sel2"  id="sel2">  
+                                                        <option value="0">ดูทั้งหมด</option>
+                                                        <option value="1">มกราคม</option> 
+                                                        <option value="2">กุมภาพันธ์</option>  
+                                                        <option value="3">มีนาคม </option> 
+                                                        <option value="4">เมษายน</option> 
+                                                        <option value="5">พฤษภาคม</option>
+                                                        <option value="6">มิถุนายน</option>
+                                                        <option value="7">กรกฎาคม</option>
+                                                        <option value="8">สิงหาคม</option>
+                                                        <option value="9">กันยายน</option>
+                                                        <option value="10">ตุลาคม</option>
+                                                        <option value="11">พฤศจิกายน </option>
+                                                        <option value="12">ธันวาคม </option>
+                                                    </select>
+                                                </div> 
+                                            </div> 
+
+
+                                            <h4 class="text-bold h3"> 
+                                                สร้างรายการ รับจ่าย 
+                                                <button class="btn btn-success btn-sm pb-0"> <i class="fas fa-plus"></i> เพิ่มรายการ </button>
+                                            </h4>
+                      
+                                            
+                                             
+                                            <table class="table  h5 table-x-form">
+                                                <thead>
+                                                    <tr>
+                                                        <th rowspan="2">ราย</th>
+                                                        <th rowspan="2" class="w-25">ชื่อรายการ</th>
+                                                        <th rowspan="2">วันที่รับ</th>
+                                                        <th rowspan="2" class="text-center text-success">รายรับ</th>
+                                                        <th rowspan="2" class="">วันที่จ่าย</th>
+                                                        <th colspan="4" class="text-center text-danger">รายจ่าย</th> 
+                                                        <th rowspan="2" class="text-center">รวม</th>
+                                                        <th rowspan="2"></th>
+                                                    </tr>
+                                                    <tr>  
+                                                        <th class="text-danger">ทีมงาน</th>
+                                                        <th class="text-danger">คณะ/วิทยาลัย</th>
+                                                        <th class="text-danger">มรส</th>
+                                                        <th class="text-danger">Lab มรส.</th>  
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>
+                                                            <input type="text" class="form-control" value="ค่าบำรุงทางวิชาการดนตรี">
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" class="form-control date" value="07/07/2022">
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" class="form-control" value="10,000">
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" class="form-control date" value="07/07/2022">
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" class="form-control" value="10,000">
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" class="form-control" value="6,000">
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" class="form-control" value="2,000">
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" class="form-control" value="0">
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" class="form-control" value="10,000" disabled>
+                                                        </td>
+                                                        <td> 
+                                                            <button class="btn btn-danger btn-sm pb-0"> <i class="fas fa-times"></i> </button>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2</td>
+                                                        <td>
+                                                            <input type="text" class="form-control" >
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" class="form-control date">
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" class="form-control">
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" class="form-control date">
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" class="form-control">
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" class="form-control">
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" class="form-control">
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" class="form-control">
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" class="form-control" disabled>
+                                                        </td>
+                                                        <td> 
+                                                            <button class="btn btn-danger btn-sm pb-0"> <i class="fas fa-times"></i> </button>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+
+
+
+                 
+
+                                            <div class="col-12 p-0 mt-3"> 
+                                                <hr>
+                                            </div>
+                                            
+                                            <div class="form-group row">
+                                                <div class="col-xl-2 col-12"></div> 
+                                                <div class="col-xl-4 col-12"> 
+                                                    <a href="academic-service.html" class="btn btn-info pl-4 pr-4">บันทึก</a>
+                                                    <button type="button" class="btn btn-secondary"  >ยกเลิก</button>
+                                                </div>
+                                            </div>   
+
+                                        </form>
+
+                                    </div>
+                                </div>
+                            </div>
+ 
+                        </div>
+                    </div> 
+                </section> 
+            </div> 
+            <footer class="main-footer">
+                ศูนย์บริการวิชาการ
+                <div class="float-right d-none d-sm-inline-block">
+                    <b>Version</b> 1.1
+                </div>
+            </footer>  
+        </div> 
+
+        <div class="modal fade" id="myModal">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <!-- Modal Header --> 
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <div class="col text-center pt-5">
+                            <h1><i class="fas fa-check-circle text-success"></i></h1>
+                            <h2 class="text-success">อนุมัติโครงการ</h2>
+                            
+                        </div>
+                    </div>
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <div class="col text-center">
+                            <a href="plan-price.html"  class="btn btn-success mr-3">ยืนยัน</a>
+                            <button  class="btn btn-outline-secondary" data-dismiss="modal">ยกเลิก</ิ>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="myModal2">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title text-danger"><b>ไม่อนุมัติโครงการ</b></h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <div class="col">
+                            <div class="row justify-content-center"> 
+                                <div class="col-12">
+                                    <h4>หมายเหตุ</h4>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <div class="col">
+                            <a href="plan-price.html"  class="btn btn-primary mr-2">ยืนยัน</a>
+                            <button  class="btn btn-secondary" data-dismiss="modal">ยกเลิก</ิ>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- jQuery -->
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script> 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>    
+  
+ 
+        <script src="js/adminlte.js"></script>   
+        <!-- TABLE -->
+        <script src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"></script> 
+        <script src="https://cdn.datatables.net/1.10.25/js/dataTables.bootstrap4.min.js"></script> 
+        <script src="https://cdn.datatables.net/responsive/2.2.9/js/dataTables.responsive.min.js"></script> 
+        <script src="https://cdn.datatables.net/responsive/2.2.9/js/responsive.bootstrap4.min.js"></script> 
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js" integrity="sha512-T/tUfKSV1bihCnd+MxKD0Hm1uBBroVYBOYSk1knyvQ9VyZJpc/ALb4P0r6ubwVPSGB2GvjeoMAJJImBG12TiaQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/locales/bootstrap-datepicker.th.min.js" integrity="sha512-cp+S0Bkyv7xKBSbmjJR0K7va0cor7vHYhETzm2Jy//ZTQDUvugH/byC4eWuTii9o5HN9msulx2zqhEXWau20Dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+        <script>
+            $('input.date').datepicker({
+                clearBtn: true,
+                language: "th",
+                calendarWeeks: false,
+                autoclose: true,
+                todayHighlight: true,
+                format: 'dd/mm/yyyy',
+                toggleActive: true
+            });
+        </script>
+
+    </body>
+</html>

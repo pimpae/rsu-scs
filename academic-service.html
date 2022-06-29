@@ -154,7 +154,7 @@
                             <div class="col-sm-6">
                                 <h1 class="m-0">
                                     <b>หน่วยบริการวิชาการ</b>
-                                    <!-- <a href="plan-create-form.html" class="btn btn-info ml-3 pt-2 btn-xs"><i class="fal fa-plus"></i> สร้างงานบริการวิชาการ</a> -->
+                                    <a href="academic-service-form.html" class="btn btn-info ml-3 pt-2 btn-xs"><i class="fal fa-plus"></i> เพิ่มรายการ รายได้ </a>
                                 </h1>
                             </div>  
                         </div> 
@@ -164,38 +164,31 @@
                     <div class="container-fluid">
                         <div class="div-box card-outline card-info p-4">
                   
-                            <!-- <ul class="nav nav-tabs" role="tablist">
+                            <ul class="nav nav-tabs" role="tablist">
                                 <li class="nav-item">
-                                    <a class="nav-link active" href="#tab1" role="tab" data-toggle="tab">รายการที่อนุมัติแล้ว</a>
+                                    <a class="nav-link active" href="#tab1" role="tab" data-toggle="tab">รายการ รับจ่าย ทั้งหมด</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#tab2" role="tab" data-toggle="tab">รายการรออนุมัติ <span class="right badge badge-danger">3</span></a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#tab3" role="tab" data-toggle="tab">รายการที่ยกเลิก</a>
-                                </li>
-                            </ul>  -->
+                                    <a class="nav-link" href="#tab2" role="tab" data-toggle="tab">แยกตามหน่วยบริการวิชาการ</a>
+                                </li> 
+                            </ul> 
             
                             <div class="tab-content">
                                 <div role="tabpanel" class="tab-pane fade show active" id="tab1">
 
                                     <div class="col-12 search-label">
-                                        <div class="row">
+                                        <div class="row"> 
                                             <div class="col-xl-2">
-                                                <label for="">ชื่อหน่วยบริการวิชาการ</label>
-                                                <input type="text" class="form-control"  >
+                                                <label for="">ชื่อหน่วยบริการวิชาการ	</label>
+                                                <select class="selectpicker" title="สถานะ" data-show-subtext="true" data-live-search="true" name="sel2"  id="sel2">  
+                                                    <option>ศูนย์บริการทางวิชาการดนตรี</option>
+                                                    <option>ศูนย์บริการทางวิชาการแสดงและนาฏศิลป์</option> 
+                                                </select>
                                             </div> 
                                             <div class="col-xl-2">
                                                 <label for="">วันที่สร้าง </label>
                                                 <input type="text" class="form-control"  >
-                                            </div>  
-                                            <!-- <div class="col-xl-2">
-                                                <label for="">ประเภทโครงการ	</label>
-                                                <select class="selectpicker" title="สถานะ" data-show-subtext="true" data-live-search="true" name="sel2"  id="sel2">  
-                                                    <option>พัฒนาซอฟต์แวร์</option>
-                                                    <option>ก่อสร้าง</option> 
-                                                </select>
-                                            </div>  -->
+                                            </div>   
                                             <div class="col-xl-2">
                                                 <label for="">เจ้าหน้าที่สร้าง</label>
                                                 <input type="text" class="form-control"  >
@@ -217,52 +210,105 @@
                                                     <th>#</th> 
                                                     <th>ชื่อหน่วยบริการวิชาการ</th> 
                                                     <th>เจ้าหน้าที่สร้าง</th>
-                                                    <th>วันที่สร้าง</th> 
-                                                    <th>รายได้</th> 
-                                                    <th>สถานะ</th>
+                                                    <th>เดือน</th>   
+                                                    <th>รายได้</th>  
                                                     <th>&nbsp;</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 <tr> 
+                                                    <td>#RSU-A123</td>
+                                                    <td>ศูนย์บริการทางวิชาการดนตรี</td>
+                                                    <td>อดิศร ศรีสุธรรม</td>
+                                                    <td>มิถุนายน</td> 
+                                                    <td>12,000</td>  
+                                                    <td>
+                                                        <a href="academic-service-des.html" class="btn btn-primary btn-sm pt-2"  data-toggle="tooltip" data-placement="top" title="รายละเอียด">
+                                                            รายละเอียด
+                                                        </a> 
+                                                    </td>
+                                                </tr>                                     
+                                            </tbody> 
+                                        </table>
+                                    </div>
+                                </div> 
+                                <div role="tabpanel" class="tab-pane fade" id="tab2">
+
+                                    <div class="col-12 search-label">
+                                        <div class="row"> 
+                                            <div class="col-xl-2">
+                                                <label for="">ชื่อหน่วยบริการวิชาการ	</label>
+                                                <select class="selectpicker" title="ชื่อหน่วยบริการวิชาการ" data-show-subtext="true" data-live-search="true" name="sel2"  id="sel2">  
+                                                    <option>ศูนย์บริการทางวิชาการดนตรี</option>
+                                                    <option>ศูนย์บริการทางวิชาการแสดงและนาฏศิลป์</option> 
+                                                    <option>ศูนย์บริการทางวิชาการดนตรี</option>
+                                                    <option>ศูนย์บริการทางวิชาการแสดงและนาฏศิลป์</option> 
+                                                    <option>ศูนย์บริการทางวิชาการดนตรี</option>
+                                                    <option>ศูนย์บริการทางวิชาการแสดงและนาฏศิลป์</option> 
+                                                </select>
+                                            </div>   
+                                            <div class="col-xl-2">
+                                                <label for="">เดือน	</label>
+                                                <select class="selectpicker" title="เดือน" data-show-subtext="true" data-live-search="true" name="sel2"  id="sel2">  
+                                                    <option value="0">ดูทั้งหมด</option>
+                                                    <option value="1">มกราคม</option> 
+                                                    <option value="2">กุมภาพันธ์</option>  
+                                                    <option value="3">มีนาคม </option> 
+                                                    <option value="4">เมษายน</option> 
+                                                    <option value="5">พฤษภาคม</option>
+                                                    <option value="6">มิถุนายน</option>
+                                                    <option value="7">กรกฎาคม</option>
+                                                    <option value="8">สิงหาคม</option>
+                                                    <option value="9">กันยายน</option>
+                                                    <option value="10">ตุลาคม</option>
+                                                    <option value="11">พฤศจิกายน </option>
+                                                    <option value="12">ธันวาคม </option>
+                                                </select>
+                                            </div>  
+                                            <div class="col-xl-2">
+                                                <label for="">ปีการศึกษา</label>
+                                                <select class="selectpicker" title="ปีการศึกษา" data-show-subtext="true" data-live-search="true" name="sel2"  id="sel2">   
+                                                    <option>2566</option>  
+                                                    <option>2565</option> 
+                                                    <option>2564</option>  
+                                                    <option>2563</option>  
+                                                    <option>2562</option>  
+                                                    <option>2561</option> 
+                                                </select>
+                                            </div>   
+                                            <div class="col-xl-2"> 
+                                                <label class="col-12">&nbsp; </label>
+                                                <button href="#" class="btn btn-primary btn-sm pt-2 ">  <i class="far fa-search"></i> ค้นหา
+                                                </button> 
+                                            </div> 
+                                        </div>
+                                    </div>
+
+                                    <br>
+
+                                    <div class="col-12 table-responsive">
+                                        <table id="tb-job" class="table table-class table-striped  " style="width:100%">
+                                            <thead>
+                                                <tr>
+                                                    <th>#</th> 
+                                                    <th>ชื่อหน่วยบริการวิชาการ</th> 
+                                                    <th>จำนวนรายการ</th>  
+                                                    <th>จำนวนรายได้</th>
+                                                    <th>&nbsp;</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <!-- <tr> 
                                                     <td>1</td>
-                                                    <td>โครงการวิชาการ #1</td>
-                                                    <td>อดิศร ศรีสุธรรม</td>
-                                                    <td>11/01/2564</td> 
-                                                    <td>-</td> 
-                                                    <td>-</td> 
+                                                    <td>ศูนย์บริการทางวิชาการดนตรี</td>
+                                                    <td>13</td>
+                                                    <td>120,000</td>  
                                                     <td>
-                                                        <a href="#" class="btn btn-primary btn-sm pt-2"  data-toggle="tooltip" data-placement="top" title="รายละเอียด">
+                                                        <a href="academic-service-des.html" class="btn btn-primary btn-sm pt-2 "  data-toggle="tooltip" data-placement="top" title="รายละเอียด">
                                                             รายละเอียด
-                                                        </a> 
+                                                        </a>  
                                                     </td>
-                                                </tr>    
-                                                <tr> 
-                                                    <td>2</td>
-                                                    <td>โครงการวิชาการ #1</td>
-                                                    <td>อดิศร ศรีสุธรรม</td>
-                                                    <td>11/01/2564</td> 
-                                                    <td>-</td> 
-                                                    <td>-</td> 
-                                                    <td>
-                                                        <a href="#" class="btn btn-primary btn-sm pt-2"  data-toggle="tooltip" data-placement="top" title="รายละเอียด">
-                                                            รายละเอียด
-                                                        </a> 
-                                                    </td>
-                                                </tr>   
-                                                <tr> 
-                                                    <td>3</td>
-                                                    <td>โครงการวิชาการ #1</td>
-                                                    <td>อดิศร ศรีสุธรรม</td>
-                                                    <td>11/01/2564</td> 
-                                                    <td>-</td> 
-                                                    <td>-</td> 
-                                                    <td>
-                                                        <a href="#" class="btn btn-primary btn-sm pt-2"  data-toggle="tooltip" data-placement="top" title="รายละเอียด">
-                                                            รายละเอียด
-                                                        </a> 
-                                                    </td>
-                                                </tr>                                          
+                                                </tr>                                  -->
                                             </tbody> 
                                         </table>
                                     </div>

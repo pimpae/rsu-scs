@@ -241,3 +241,21 @@ input:not(:focus):valid ~ .floating-label{
 .table-class{
   font-size: 18px;
 }
+
+
+
+/* CSS ZIA NA 2022/06 */
+
+.table-x-form th{
+  vertical-align: middle !important;
+}
+.table-x-form td{
+  padding-left: 4px;
+  padding-right: 4px;
+}
+.table-x-form td:nth-child(n+3) input{
+  text-align: right;
+}
+.table-x-form input.date{
+  text-align: center;
+}
