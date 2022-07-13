@@ -125,7 +125,7 @@
                                                             <label for="">ชื่อโครงการ</label> 
                                                         </div>  
                                                         <div class="col-xl-4"> 
-                                                            <input type="text" class="form-control">
+                                                            <input type="text" class="form-control" value="โครงการ 1">
                                                         </div> 
                                                     </div> 
                                                     <div class="form-group row">
@@ -134,7 +134,7 @@
                                                         </div>  
                                                         <div class="col-xl-4">  
                                                             <select class="selectpicker" title="เลือกประเภทโครงการ" data-show-subtext="true" data-live-search="true" name="sel2"  id="sel2">  
-                                                                <option>พัฒนาซอฟต์แวร์</option>
+                                                                <option selected>พัฒนาซอฟต์แวร์</option>
                                                                 <option>ก่อสร้าง</option> 
                                                             </select>
                                                         </div>  
@@ -145,7 +145,7 @@
                                                         <div class="col-xl-2">
                                                             <div class="form-group radio1x">
                                                                 <div class="custom-control custom-radio">
-                                                                    <input class="custom-control-input"  type="radio" id="type_plan1" name="type_plan" value="radio1">
+                                                                    <input class="custom-control-input"  checked type="radio" id="type_plan1" name="type_plan" value="radio1">
                                                                     <label for="type_plan1" class="custom-control-label">แบบสาธารณะ</label>
                                                                 </div> 
                                                             </div> 
@@ -172,7 +172,7 @@
                                                         <div class="col-xl-2">
                                                             <div class="form-group radio1x"> 
                                                                 <div class="custom-control custom-radio">
-                                                                    <input class="custom-control-input"  type="radio" id="type_on2" name="type_on" value="on2">
+                                                                    <input class="custom-control-input" checked type="radio" id="type_on2" name="type_on" value="on2">
                                                                     <label for="type_on2" class="custom-control-label">แบบเชิงพานิชย์</label>
                                                                 </div>
                                                             </div> 
@@ -189,7 +189,7 @@
                                                             <label for="">ประมาณการรายได้</label> 
                                                         </div>  
                                                         <div class="col-xl-4"> 
-                                                            <input type="text" class="form-control">
+                                                            <input type="text" class="form-control"  value="1,399,900" >
                                                         </div> 
                                                     </div> 
 
@@ -198,7 +198,7 @@
                                                             <label for="">ระยะเวลาที่ใช้</label> 
                                                         </div>  
                                                         <div class="col-xl-4"> 
-                                                            <input type="text" class="form-control">
+                                                            <input type="text" class="form-control"  value="20 วัน" >
                                                         </div> 
                                                     </div> 
 
@@ -208,18 +208,18 @@
                                                         <div class="col-xl-4">
                                                             <div class="form-group radio2x">
                                                                 <div class="custom-control custom-radio">
-                                                                    <input class="custom-control-input" type="radio" id="customRadio1" name="customRadio" value="radio1">
+                                                                    <input class="custom-control-input" type="radio" checked id="customRadio1" name="customRadio" value="radio1">
                                                                     <label for="customRadio1" class="custom-control-label">ต้องใช้</label>
                                                                 </div>
                                                                 <div class="custom-control custom-radio">
-                                                                    <input class="custom-control-input" type="radio" id="customRadio2" name="customRadio" value="radio2">
+                                                                    <input class="custom-control-input" type="radio"  id="customRadio2" name="customRadio" value="radio2">
                                                                     <label for="customRadio2" class="custom-control-label">ไม่ต้องใช้</label>
                                                                 </div>
                                                             </div> 
                                                         </div>
                                                     </div>
 
-                                                    <div class="form-group row amount" style="display: none;" >
+                                                    <div class="form-group row amount" >
                                                         <div class="col-xl-3">
                                                             <label for="">จำนวน</label> 
                                                         </div>  
@@ -235,20 +235,32 @@
                                                             <label for="">หน่วยงานเจ้าของโครงการ</label> 
                                                         </div>  
                                                         <div class="col-xl-4">   
-                                                            <input type="text" class="form-control"  > 
+                                                            <input type="text" class="form-control"   value="หน่วยงาน1"> 
                                                         </div>  
                                                     </div>  
                                                     <hr>
                                                     <h4><b>เอกสารที่เกี่ยวข้อง</b></h4>
-                                               
                                                     <div class="form-group row">
                                                         <div class="col-xl-3">
-                                                            <label for="">อัพโหลดเอกสาร</label> 
+                                                            <label for="">หนังสือมอบอำนาจ</label> 
                                                         </div>  
                                                         <div class="col-xl-6">  
-                                                            <input type="file" class="file">
+                                                            <label for="">
+                                                                <a href="https://pcscenter.sbpolice.go.th/themes/easyidesign1/js/plugins/pdfjs/web/viewer.html?file=https://pcscenter.sbpolice.go.th/uploads/data/news/Documentlist2_20200305_142213.pdf" target="_blank" class="btn-pink"><i class="far fa-file-pdf"></i> ใบมอบอำนาจ-63630.pdf</a>
+                                                            </label> 
                                                         </div>  
-                                                    </div>  
+                                                    </div> 
+                                                    <div class="form-group row">
+                                                        <div class="col-xl-3">
+                                                            <label for="">เอกสาร #2</label> 
+                                                        </div>  
+                                                        <div class="col-xl-6">  
+                                                            <label for="">
+                                                                <a href="https://pcscenter.sbpolice.go.th/themes/easyidesign1/js/plugins/pdfjs/web/viewer.html?file=https://pcscenter.sbpolice.go.th/uploads/data/news/Documentlist2_20200305_142213.pdf" target="_blank" class="btn-pink"><i class="far fa-file-pdf"></i> เอกสารเพิ่มเติม.pdf</a>
+                                                            </label> 
+                                                        </div>  
+                                                    </div> 
+ 
                                                     <div class="col-12 p-0 mt-3"> 
                                                         <hr>
                                                     </div>
@@ -278,7 +290,7 @@
                                                             <label for="">หลักการและเหตุผล</label> 
                                                         </div>  
                                                         <div class="col-xl-4"> 
-                                                            <textarea name="" class="form-control" id="" cols="30" rows="4"></textarea>
+                                                            <textarea name="" class="form-control" id="" cols="30" rows="4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo cumque vel numquam a earum modi blanditiis dolorem nulla, possimus similique quas nisi sapiente, distinctio porro corrupti dolore incidunt inventore itaque.</textarea>
                                                         </div> 
                                                     </div> 
                                                     <div class="form-group row">
@@ -286,7 +298,7 @@
                                                             <label for="">วัตถุประสงค์</label> 
                                                         </div>  
                                                         <div class="col-xl-4"> 
-                                                            <textarea name="" class="form-control" id="" cols="30" rows="4"></textarea>
+                                                            <textarea name="" class="form-control" id="" cols="30" rows="4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo cumque vel numquam a earum modi blanditiis dolorem nulla, possimus similique quas nisi sapiente, distinctio porro corrupti dolore incidunt inventore itaque.</textarea>
                                                         </div> 
                                                     </div> 
                                                     <div class="form-group row">
@@ -294,7 +306,7 @@
                                                             <label for="">กลุ่มเป้าหมาย</label> 
                                                         </div>  
                                                         <div class="col-xl-4"> 
-                                                            <textarea name="" class="form-control" id="" cols="30" rows="4"></textarea>
+                                                            <textarea name="" class="form-control" id="" cols="30" rows="4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo cumque vel numquam a earum modi blanditiis dolorem nulla, possimus similique quas nisi sapiente, distinctio porro corrupti dolore incidunt inventore itaque.</textarea>
                                                         </div> 
                                                     </div> 
                                                     <div class="form-group row">
@@ -302,7 +314,7 @@
                                                             <label for="">ชั้นตอนการดำเนินการ</label> 
                                                         </div>  
                                                         <div class="col-xl-4"> 
-                                                            <textarea name="" class="form-control" id="" cols="30" rows="4"></textarea>
+                                                            <textarea name="" class="form-control" id="" cols="30" rows="4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo cumque vel numquam a earum modi blanditiis dolorem nulla, possimus similique quas nisi sapiente, distinctio porro corrupti dolore incidunt inventore itaque.</textarea>
                                                         </div> 
                                                     </div> 
                                                     <div class="form-group row">
@@ -310,7 +322,7 @@
                                                             <label for="">สถานที่ดำเนินการ</label> 
                                                         </div>  
                                                         <div class="col-xl-4"> 
-                                                            <textarea name="" class="form-control" id="" cols="30" rows="4"></textarea>
+                                                            <textarea name="" class="form-control" id="" cols="30" rows="4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo cumque vel numquam a earum modi blanditiis dolorem nulla, possimus similique quas nisi sapiente, distinctio porro corrupti dolore incidunt inventore itaque.</textarea>
                                                         </div> 
                                                     </div> 
                                                     <div class="form-group row">
@@ -318,7 +330,7 @@
                                                             <label for="">ตัวชี้วัดความสำเร็จโครงการ</label> 
                                                         </div>  
                                                         <div class="col-xl-4"> 
-                                                            <textarea name="" class="form-control" id="" cols="30" rows="4"></textarea>
+                                                            <textarea name="" class="form-control" id="" cols="30" rows="4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo cumque vel numquam a earum modi blanditiis dolorem nulla, possimus similique quas nisi sapiente, distinctio porro corrupti dolore incidunt inventore itaque.</textarea>
                                                         </div> 
                                                     </div> 
                                             
@@ -327,29 +339,22 @@
                                                             <label for="">ผู้รับผิดชอบโครงการ</label> 
                                                         </div>  
                                                         <div class="col-xl-4"> 
-                                                            <input type="text" class="form-control"   >
+                                                            <input type="text" class="form-control"  value="ตรีภพ" >
                                                         </div> 
                                                     </div> 
                                                     <div class="form-group row">
                                                         <div class="col-xl-3 mb-2">
-                                                            <label for="">ผู้ประสานงาน <span class="text-danger">*</span>  
-                                                                <button type="button" class="btn btn-info btn-sm btn-flat pt-2">
-                                                                    <i class="fas fa-plus"></i>   เพิ่ม
-                                                                </button>
+                                                            <label for="">ผู้ประสานงาน <span class="text-danger">*</span>   
                                                             </label>  
                                                         </div>  
                                                         <div class="col-xl-9">
                                                             <div class="row">
                                                                 <div class="col-xl-3">
-                                                                    <input type="text" class="form-control" name="" id="" placeholder="ชื่อ-นามสกุล"> 
+                                                                    <input type="text" class="form-control" name="" id="" value="อดิศร ศรีสุธรรม"> 
                                                                 </div> 
                                                                 <div class="col-xl-2">
-                                                                    <input type="text" class="form-control" name="" id="" placeholder="เบอร์โทร"> 
-                                                                </div>
-                                                                
-                                                                <button type="button" class="btn btn-danger btn-flat btn-sm pt-2 pa-r2">
-                                                                    <i class="fas fa-times"></i>
-                                                                </button>
+                                                                    <input type="text" class="form-control" name="" id="" value="098-37703883"> 
+                                                                </div> 
                                                             </div>
                                                         </div>
                                                     </div>
@@ -379,14 +384,99 @@
                                     <div class="col">
                                         <div class="row justify-content-center"> 
                                             <div class="col-xl-10 col-12">
-                                                <form action=""> 
-                                                    <h4 class="mb-4">
-                                                        <b>แบ่งงวดงาน</b>
-                                                    </h4>
-        
-                                                    
-                                                    <div id="installment1">
+                                                <form action="">   
+                                                    <div id="installment1">  
+                                                        <div class="col-12">
+                                                            <div class="row justify-content-center">
+                                                                <div class="col-xl-10 h5">
+                                                                    <h3 class="text-success"><b> <i class="fas fa-check"></i> ส่งงานแล้ว</b></h3>
+                                                                    <br>
+                                                                    <div class="form-group row mb-0">
+                                                                        <div class="col-xl-2">
+                                                                            <label for="">ชื่องวดงาน :</label> 
+                                                                        </div>  
+                                                                        <div class="col-xl-6"> 
+                                                                            <label for="">งวดงาน 1</label>  
+                                                                        </div> 
+                                                                    </div> 
+                                                                    <div class="form-group row mb-0">
+                                                                        <div class="col-xl-2">
+                                                                            <label for="">ระยะเวลาที่ใช้ :</label> 
+                                                                        </div>  
+                                                                        <div class="col-xl-6"> 
+                                                                            <label for="">60 วัน</label>  
+                                                                        </div> 
+                                                                    </div> 
+                                                                    <div class="form-group row mb-0">
+                                                                        <div class="col-xl-2">
+                                                                            <label for="">คิดเป็นร้อยละ :</label> 
+                                                                        </div>  
+                                                                        <div class="col-xl-6"> 
+                                                                            <label for="">30%</label>  
+                                                                        </div> 
+                                                                    </div> 
+                                                                    <div class="form-group row mb-0">
+                                                                        <div class="col-xl-2">
+                                                                            <label for="">เป็นจำนวนเงิน :</label> 
+                                                                        </div>  
+                                                                        <div class="col-xl-6"> 
+                                                                            <label for="">200,000</label>  
+                                                                        </div> 
+                                                                    </div> 
+                                                                    <div class="form-group row mb-0">
+                                                                        <div class="col-xl-2">
+                                                                            <label for="">รายละเอียด :</label> 
+                                                                        </div>  
+                                                                        <div class="col-xl-6"> 
+                                                                            <label for="">
+                                                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, doloremque fugiat! Incidunt repellendus soluta, numquam similique est molestiae libero natus porro ab odit quia molestias consequatur culpa, tempora, veniam cumque?  
+                                                                            </label>  
+                                                                        </div> 
+                                                                    </div>  
 
+                                                                    
+                                                                    <div class="col-12 p-0 mt-3"> 
+                                                                        <hr>
+                                                                    </div>
+                                                                    
+                                                                    <h3><b>ส่งงานงวดที่ 1</b></h3> 
+                                                                    <div class="form-group row">
+                                                                        <div class="col-xl-2">
+                                                                            <label for="">เอกสารส่งงาน</label> 
+                                                                        </div>  
+                                                                        <div class="col-xl-6">   
+                                                                            <a href="https://pcscenter.sbpolice.go.th/themes/easyidesign1/js/plugins/pdfjs/web/viewer.html?file=https://pcscenter.sbpolice.go.th/uploads/data/news/Documentlist2_20200305_142213.pdf" target="_blank" class="btn-pink"><i class="far fa-file-pdf"></i> เอกสารส่งงาน.pdf</a>
+                                                                        </div>  
+                                                                    </div>  
+                                                                    <div class="form-group row">
+                                                                        <div class="col-xl-2">
+                                                                            <label for="">รายละเอียดงาน</label> 
+                                                                        </div>  
+                                                                        <div class="col-xl-6">
+                                                                            <label>
+                                                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, doloremque fugiat! Incidunt repellendus soluta, numquam similique est molestiae libero natus porro ab odit quia molestias consequatur culpa, tempora, veniam cumque? <br> 
+                                                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, doloremque fugiat! Incidunt repellendus soluta, numquam similique est molestiae libero natus porro ab odit quia molestias consequatur culpa, tempora, veniam cumque? <br> 
+                                                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, doloremque fugiat! Incidunt repellendus soluta, numquam similique est molestiae libero natus porro ab odit quia molestias consequatur culpa, tempora, veniam cumque? <br> 
+                                                                            </label>
+                                                                        </div>
+                                                                    </div>  
+                                                                    <div class="form-group row">
+                                                                        <div class="col-xl-2">
+                                                                            <label for="">วันที่ส่งงาน</label> 
+                                                                        </div>  
+                                                                        <div class="col-xl-6">   
+                                                                            <label>10/02/2566 10:39</label>
+                                                                        </div>  
+                                                                    </div>  
+                                                                </div>
+                                                            </div>
+                                                        </div>
+            
+                                                        <div class="col-12 p-0 mt-3"> 
+                                                            <hr>
+                                                        </div>
+                                                    </div>
+                                                    <div id="installment2"> 
                                                     
                                                         <div class="form-group row mb-0">
                                                             <div class="col-1 h3 text-bold">&nbsp; </div>
@@ -406,46 +496,93 @@
                                                         </div> 
             
                                                         <div class="form-group row">
-                                                            <div class="col-1 h4 text-bold">งวดที่ 1. </div>
+                                                            <div class="col-1 h4 text-bold">งวดที่ 2. </div>
                                                             <div class="col-1">&nbsp;</div>
                                                             <div class="col-3">
-                                                                <input type="text" class="form-control" name="" id="" >
+                                                                <input type="text" class="form-control" name="" id="" value="งวดที่ 2.">
                                                             </div>
                                                             <div class="col-1">
-                                                                <input type="text" class="form-control" name="" id="" >
+                                                                <input type="text" class="form-control" name="" id="" value="10">
                                                             </div>
                                                             <div class="col-2">
-                                                                <input type="text" class="form-control" name="" id="" >
+                                                                <input type="text" class="form-control" name="" id="" value="100,000">
                                                             </div>
                                                             <div class="col-2">
-                                                                <input type="text" class="form-control" name="" id="" >
-                                                            </div>
-                                                            <button type="button" class="btn btn-danger btn-flat btn-sm pt-2">
-                                                                <i class="fas fa-times"></i>
-                                                            </button>
+                                                                <input type="text" class="form-control" name="" id="" value="10">
+                                                            </div> 
                                                             <div class="col-xl-12">&nbsp;</div>
                                                             
                                                             
                                                             <div class="col-1">&nbsp;</div>
                                                             <label class="col-1">รายละเอียด</label> 
                                                             <div class="col-8">
-                                                                <textarea name="" class="form-control" id="" cols="30" rows="6"></textarea>
+                                                                <textarea name="" class="form-control" id="" cols="30" rows="4"> เทคอนกรีตพื้นถนนคอนกรีต จ านวนไม่น้อยกว่า 1,126.80 ตารางเมตร- งานตัดรอยต่อและหยอดยางแล้วเสร็จ - งานไหล่ทางลูกรังข้างละ 50 เซนติเมตร แล้วเสร็จ - งานดาดคอนกรีตหนา 10 เซนติเมตร แล้วเสร็จ  - งานเคลียร์พื้นที่หน้างาน และท าการก่อสร้างส่วนต่าง ๆ ของงานที่เหลือท  เทคอนกรีตพื้นถนนคอนกรีต จ านวนไม่น้อยกว่า 1,126.80 ตารางเมตร- งานตัดรอยต่อและหยอดยางแล้วเสร็จ - งานไหล่ทางลูกรังข้างละ 50 เซนติเมตร แล้วเสร็จ - งานดาดคอนกรีตหนา 10 เซนติเมตร แล้วเสร็จ  - งานเคลียร์พื้นที่หน้างาน และท าการก่อสร้างส่วนต่าง ๆ ของงานที่เหลือท  เทคอนกรีตพื้นถนนคอนกรีต จ านวนไม่น้อยกว่า 1,126.80 ตารางเมตร- งานตัดรอยต่อและหยอดยางแล้วเสร็จ - งานไหล่ทางลูกรังข้างละ 50 เซนติเมตร แล้วเสร็จ - งานดาดคอนกรีตหนา 10 เซนติเมตร แล้วเสร็จ  - งานเคลียร์พื้นที่หน้างาน และท าการก่อสร้างส่วนต่าง ๆ ของงานที่เหลือท  เทคอนกรีตพื้นถนนคอนกรีต จ านวนไม่น้อยกว่า 1,126.80 ตารางเมตร- งานตัดรอยต่อและหยอดยางแล้วเสร็จ - งานไหล่ทางลูกรังข้างละ 50 เซนติเมตร แล้วเสร็จ - งานดาดคอนกรีตหนา 10 เซนติเมตร แล้วเสร็จ  - งานเคลียร์พื้นที่หน้างาน และท าการก่อสร้างส่วนต่าง ๆ ของงานที่เหลือท  เทคอนกรีตพื้นถนนคอนกรีต จ านวนไม่น้อยกว่า 1,126.80 ตารางเมตร- งานตัดรอยต่อและหยอดยางแล้วเสร็จ - งานไหล่ทางลูกรังข้างละ 50 เซนติเมตร แล้วเสร็จ - งานดาดคอนกรีตหนา 10 เซนติเมตร แล้วเสร็จ  - งานเคลียร์พื้นที่หน้างาน และท าการก่อสร้างส่วนต่าง ๆ ของงานที่เหลือท  
+                                                                </textarea>
                                                             </div>
 
                                                             
                                                             <div class="col-xl-12">&nbsp;</div>
                                                             <div class="col-1">&nbsp;</div>
                                                             <label class="col-1">เอกสารที่ต้องส่ง</label>   
-                                                            <div class="col-xl-6">    
-                                                                <div class="input-group mb-3 col-6 pl-0">
-                                                                    <input type="text" class="form-control" >
-                                                                    <div class="input-group-append">
-                                                                      <button class="btn btn-danger btn-sm" type="button"><i class="fas fa-times"></i> ลบ </button>
-                                                                    </div>
-                                                                </div>
-                                                                <button type="button" class="btn btn-success btn-sm btn-flat">
-                                                                    <i class="fas fa-plus"></i> เพิ่ม
-                                                                </button>
+                                                            <div class="col-xl-3">   
+                                                                <input type="text" class="form-control" value="เอกสารส่งงาน"> 
+                                                            </div>   
+                                                        </div>    
+            
+                                                        <div class="col-12 p-0 mt-3"> 
+                                                            <hr>
+                                                        </div>
+                                                    </div>
+                                                    <div id="installment3"> 
+                                                    
+                                                        <div class="form-group row mb-0">
+                                                            <div class="col-1 h3 text-bold">&nbsp; </div>
+                                                            <div class="col-1">&nbsp;</div>
+                                                            <div class="col-3">
+                                                                <label>ชื่องวดงาน</label> 
+                                                            </div>
+                                                            <div class="col-1">
+                                                                <label>%</label> 
+                                                            </div>
+                                                            <div class="col-2">
+                                                                <label>จำนวนเงิน</label> 
+                                                            </div>
+                                                            <div class="col-2">
+                                                                <label>ระยะเวลาที่ใช้</label> 
+                                                            </div> 
+                                                        </div> 
+            
+                                                        <div class="form-group row">
+                                                            <div class="col-1 h4 text-bold">งวดที่ 3. </div>
+                                                            <div class="col-1">&nbsp;</div>
+                                                            <div class="col-3">
+                                                                <input type="text" class="form-control" name="" id="" value="งวดที่ 3.">
+                                                            </div>
+                                                            <div class="col-1">
+                                                                <input type="text" class="form-control" name="" id="" value="10">
+                                                            </div>
+                                                            <div class="col-2">
+                                                                <input type="text" class="form-control" name="" id="" value="100,000">
+                                                            </div>
+                                                            <div class="col-2">
+                                                                <input type="text" class="form-control" name="" id="" value="10">
+                                                            </div> 
+                                                            <div class="col-xl-12">&nbsp;</div>
+                                                            
+                                                            
+                                                            <div class="col-1">&nbsp;</div>
+                                                            <label class="col-1">รายละเอียด</label> 
+                                                            <div class="col-8">
+                                                                <textarea name="" class="form-control" id="" cols="30" rows="4"> เทคอนกรีตพื้นถนนคอนกรีต จ านวนไม่น้อยกว่า 1,126.80 ตารางเมตร- งานตัดรอยต่อและหยอดยางแล้วเสร็จ - งานไหล่ทางลูกรังข้างละ 50 เซนติเมตร แล้วเสร็จ - งานดาดคอนกรีตหนา 10 เซนติเมตร แล้วเสร็จ  - งานเคลียร์พื้นที่หน้างาน และท าการก่อสร้างส่วนต่าง ๆ ของงานที่เหลือท  เทคอนกรีตพื้นถนนคอนกรีต จ านวนไม่น้อยกว่า 1,126.80 ตารางเมตร- งานตัดรอยต่อและหยอดยางแล้วเสร็จ - งานไหล่ทางลูกรังข้างละ 50 เซนติเมตร แล้วเสร็จ - งานดาดคอนกรีตหนา 10 เซนติเมตร แล้วเสร็จ  - งานเคลียร์พื้นที่หน้างาน และท าการก่อสร้างส่วนต่าง ๆ ของงานที่เหลือท  เทคอนกรีตพื้นถนนคอนกรีต จ านวนไม่น้อยกว่า 1,126.80 ตารางเมตร- งานตัดรอยต่อและหยอดยางแล้วเสร็จ - งานไหล่ทางลูกรังข้างละ 50 เซนติเมตร แล้วเสร็จ - งานดาดคอนกรีตหนา 10 เซนติเมตร แล้วเสร็จ  - งานเคลียร์พื้นที่หน้างาน และท าการก่อสร้างส่วนต่าง ๆ ของงานที่เหลือท  เทคอนกรีตพื้นถนนคอนกรีต จ านวนไม่น้อยกว่า 1,126.80 ตารางเมตร- งานตัดรอยต่อและหยอดยางแล้วเสร็จ - งานไหล่ทางลูกรังข้างละ 50 เซนติเมตร แล้วเสร็จ - งานดาดคอนกรีตหนา 10 เซนติเมตร แล้วเสร็จ  - งานเคลียร์พื้นที่หน้างาน และท าการก่อสร้างส่วนต่าง ๆ ของงานที่เหลือท  เทคอนกรีตพื้นถนนคอนกรีต จ านวนไม่น้อยกว่า 1,126.80 ตารางเมตร- งานตัดรอยต่อและหยอดยางแล้วเสร็จ - งานไหล่ทางลูกรังข้างละ 50 เซนติเมตร แล้วเสร็จ - งานดาดคอนกรีตหนา 10 เซนติเมตร แล้วเสร็จ  - งานเคลียร์พื้นที่หน้างาน และท าการก่อสร้างส่วนต่าง ๆ ของงานที่เหลือท  
+                                                                </textarea>
+                                                            </div>
+
+                                                            
+                                                            <div class="col-xl-12">&nbsp;</div>
+                                                            <div class="col-1">&nbsp;</div>
+                                                            <label class="col-1">เอกสารที่ต้องส่ง</label>   
+                                                            <div class="col-xl-3">   
+                                                                <input type="text" class="form-control" value="เอกสารส่งงาน"> 
                                                             </div>   
                                                         </div>    
             
@@ -454,19 +591,14 @@
                                                         </div>
                                                     </div>
 
-
-                                             
-                                                    
-                                                    <button type="button" class="btn btn-primary btn-sm   btn-flat">
-                                                        <i class="fas fa-plus"></i> เพิ่มงวดงาน
-                                                    </button>
+ 
+ 
                                           
                                                     
                                                     <div class="form-group row">
                                                         <div class="col-xl-3 col-12"></div> 
                                                         <div class="col-xl-6 col-12"> 
-                                                            <a href="user-plan-price.html" class="btn btn-info pl-4 pr-4">บันทึก</a>
-                                                            <button type="button" class="btn btn-secondary"  >ยกเลิก</button>
+                                                            <a href="user-plan-price.html" class="btn btn-info pl-4 pr-4">บันทึก</a> 
                                                         </div>
                                                     </div>   
         
@@ -564,26 +696,6 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js" integrity="sha512-T/tUfKSV1bihCnd+MxKD0Hm1uBBroVYBOYSk1knyvQ9VyZJpc/ALb4P0r6ubwVPSGB2GvjeoMAJJImBG12TiaQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/locales/bootstrap-datepicker.th.min.js" integrity="sha512-cp+S0Bkyv7xKBSbmjJR0K7va0cor7vHYhETzm2Jy//ZTQDUvugH/byC4eWuTii9o5HN9msulx2zqhEXWau20Dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-        <script> 
-
-            $("form .radio1x input:radio").change(function () {
-                if ($(this).val() == "radio1") { 
-                    $(".plan1x").show();
-                } 
-            });
-
-
-            $("form .radio2x input:radio").change(function () {
-                if ($(this).val() == "radio1") { 
-                    $(".amount").show();
-                } else {
-                    $(".amount").hide();
-                }
-            });
-
-    </script>
-    
 
     </body>
 </html>
